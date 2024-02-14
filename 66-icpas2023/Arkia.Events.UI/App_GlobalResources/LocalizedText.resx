@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RGS04_AccNum" xml:space="preserve">
+    <value>מלווה מספר</value>
+    <comment>מלווה מספר</comment>
+  </data>
+  <data name="RGS04_AddCom" xml:space="preserve">
+    <value>הוסף מלווה</value>
+    <comment>הוסף מלווה</comment>
+  </data>
+  <data name="RGS04_BirthDate" xml:space="preserve">
+    <value>תאריך לידה</value>
+    <comment>תאריך לידה</comment>
+  </data>
+  <data name="RGS04_Day" xml:space="preserve">
+    <value>יום</value>
+    <comment>יום</comment>
+  </data>
+  <data name="RGS04_Delete" xml:space="preserve">
+    <value>מחק</value>
+    <comment>מחק</comment>
+  </data>
+  <data name="RGS04_FirstName" xml:space="preserve">
+    <value>שם פרטי</value>
+    <comment>שם פרטי</comment>
+  </data>
+  <data name="RGS04_LastName" xml:space="preserve">
+    <value>שם משפחה</value>
+    <comment>שם משפחה</comment>
+  </data>
+  <data name="RGS04_Month" xml:space="preserve">
+    <value>חודש</value>
+    <comment>חודש</comment>
+  </data>
+  <data name="RGS04_PassportExp" xml:space="preserve">
+    <value>תוקף דרכון</value>
+    <comment>תוקף דרכון</comment>
+  </data>
+  <data name="RGS04_Select" xml:space="preserve">
+    <value>בחר</value>
+    <comment>בחר</comment>
+  </data>
+  <data name="RGS04_Title" xml:space="preserve">
+    <value>תואר</value>
+    <comment>תואר</comment>
+  </data>
+  <data name="RGS04_Year" xml:space="preserve">
+    <value>שנה</value>
+    <comment>שנה</comment>
+  </data>
+  <data name="RGS02_Clear" xml:space="preserve">
+    <value>נקה</value>
+    <comment>נקה</comment>
+  </data>
+  <data name="ContinuButton" xml:space="preserve">
+    <value>המשך</value>
+    <comment>המשך</comment>
+  </data>
+  <data name="RGS03_BirthDate" xml:space="preserve">
+    <value>תאריך לידה</value>
+    <comment>תאריך לידה</comment>
+  </data>
+  <data name="RGS03_Day" xml:space="preserve">
+    <value>יום</value>
+    <comment>יום</comment>
+  </data>
+  <data name="RGS03_district" xml:space="preserve">
+    <value>מחוז</value>
+    <comment> מחוז</comment>
+  </data>
+  <data name="RGS03_Email" xml:space="preserve">
+    <value>דוא"ל</value>
+    <comment>דואל</comment>
+  </data>
+  <data name="RGS03_Fax" xml:space="preserve">
+    <value>פקס</value>
+    <comment>פקס</comment>
+  </data>
+  <data name="RGS03_FirstName" xml:space="preserve">
+    <value>שם פרטי</value>
+    <comment>שם פרטי</comment>
+  </data>
+  <data name="RGS03_Foreign" xml:space="preserve">
+    <value>באנגלית</value>
+    <comment>באנגלית</comment>
+  </data>
+  <data name="RGS03_LastName" xml:space="preserve">
+    <value>שם משפחה</value>
+    <comment>שם משפחה</comment>
+  </data>
+  <data name="RGS03_Month" xml:space="preserve">
+    <value>חודש</value>
+    <comment>חודש</comment>
+  </data>
+  <data name="RGS03_AdditionalTelephone" xml:space="preserve">
+    <value>טלפון נוסף</value>
+    <comment>טלפון נוסף</comment>
+  </data>
+  <data name="RGS03_Passport" xml:space="preserve">
+    <value>מספר דרכון</value>
+    <comment>מספר דרכון</comment>
+  </data>
+  <data name="RGS03_PassportExp" xml:space="preserve">
+    <value>תוקף דרכון</value>
+    <comment>תוקף דרכון</comment>
+  </data>
+  <data name="RGS03_Phone" xml:space="preserve">
+    <value>טלפון</value>
+    <comment>טלפון</comment>
+  </data>
+  <data name="RGS03_RequiredFields" xml:space="preserve">
+    <value>שדות חובה בטופס</value>
+    <comment>שדות ובה בטופס</comment>
+  </data>
+  <data name="RGS03_Select" xml:space="preserve">
+    <value>בחר</value>
+    <comment>בחר</comment>
+  </data>
+  <data name="RGS03_Title" xml:space="preserve">
+    <value>תואר</value>
+    <comment>תואר</comment>
+  </data>
+  <data name="RGS03_Year" xml:space="preserve">
+    <value>שנה</value>
+    <comment>שנה</comment>
+  </data>
+  <data name="RGS05_Select" xml:space="preserve">
+    <value>בחר</value>
+    <comment>בחר</comment>
+  </data>
+  <data name="RGS05_TotalRegistrationValue" xml:space="preserve">
+    <value>סה"כ ערך דמי רישום</value>
+    <comment>סה"כ ערך דמי רישום</comment>
+  </data>
+  <data name="PRD01_Babies" xml:space="preserve">
+    <value>תינוקות</value>
+    <comment>תינוקות</comment>
+  </data>
+  <data name="PRD01_Comments" xml:space="preserve">
+    <value>הערות למלון</value>
+    <comment>הערות למלון</comment>
+  </data>
+  <data name="PRD01_Composition" xml:space="preserve">
+    <value>הרכב</value>
+    <comment>הרכב</comment>
+  </data>
+  <data name="PRD01_Full" xml:space="preserve">
+    <value>מלא</value>
+    <comment>מלא</comment>
+  </data>
+  <data name="PRD01_Room" xml:space="preserve">
+    <value>חדר</value>
+    <comment>חדר</comment>
+  </data>
+  <data name="PRD01_RoomNum" xml:space="preserve">
+    <value>חדר מספר </value>
+    <comment>חדר מספר</comment>
+  </data>
+  <data name="PRD01_RoomType" xml:space="preserve">
+    <value>סוג חדר</value>
+    <comment>סוג חדר</comment>
+  </data>
+  <data name="PRD01_SelectBase" xml:space="preserve">
+    <value>בחר בסיס אירוח</value>
+    <comment>בחר בסיס אירוח</comment>
+  </data>
+  <data name="PRD01_SelectHotel" xml:space="preserve">
+    <value>בחר מלון </value>
+    <comment>בחר מלון</comment>
+  </data>
+  <data name="PRD01_SelectNumRooms" xml:space="preserve">
+    <value>בחר מספר חדרים</value>
+    <comment>בחר מספר חדרים</comment>
+  </data>
+  <data name="PRD01_SelectRoomType" xml:space="preserve">
+    <value>בחר סוג חדר</value>
+    <comment>בחר סוג חדר</comment>
+  </data>
+  <data name="RGS01_ID" xml:space="preserve">
+    <value>תעודת זהות</value>
+    <comment>תעודת זהות</comment>
+  </data>
+  <data name="RGS01_License" xml:space="preserve">
+    <value>מספר עובד</value>
+    <comment>מספר עובד</comment>
+  </data>
+  <data name="RGS01_Catalog" xml:space="preserve">
+    <value>לקטלוג לחץ כאן</value>
+    <comment>לקטלוג לחץ כאן</comment>
+  </data>
+  <data name="PCICtrl_Header" xml:space="preserve">
+    <value>פרטי כרטיס אשראי</value>
+    <comment>פרטי כרטיס אשראי</comment>
+  </data>
+  <data name="PMN01_AdditionalProductDetails" xml:space="preserve">
+    <value>פרטי מוצרים נוספים</value>
+    <comment>פרטי מוצרים נוספים</comment>
+  </data>
+  <data name="PMN01_FlightsDetails" xml:space="preserve">
+    <value>פרטי טיסות</value>
+    <comment>פרטי טיסות</comment>
+  </data>
+  <data name="PMN01_Flight" xml:space="preserve">
+    <value>המראה</value>
+    <comment>המראה</comment>
+  </data>
+  <data name="PMN01_Guests" xml:space="preserve">
+    <value>אורחים</value>
+    <comment>אורחים</comment>
+  </data>
+  <data name="PMN01_Name" xml:space="preserve">
+    <value>שם</value>
+    <comment>שם</comment>
+  </data>
+  <data name="PMN01_Participant" xml:space="preserve">
+    <value>משתתף</value>
+    <comment>משתתף {0}</comment>
+  </data>
+  <data name="PMN01_ParticipantsList" xml:space="preserve">
+    <value>רשימת משתתפים</value>
+    <comment>רשימת משתתפים</comment>
+  </data>
+  <data name="PMN01_Passengers" xml:space="preserve">
+    <value>נוסעים</value>
+    <comment>נוסעים</comment>
+  </data>
+  <data name="PMN01_Product" xml:space="preserve">
+    <value>מוצר</value>
+    <comment>מוצר</comment>
+  </data>
+  <data name="PMN01_RegistrationFeesType" xml:space="preserve">
+    <value>סוג דמי רישום</value>
+    <comment>סוג דמי רישום</comment>
+  </data>
+  <data name="PMN01_Room" xml:space="preserve">
+    <value>חדר</value>
+    <comment>חדר {0}</comment>
+  </data>
+  <data name="PMN01_Shuttle" xml:space="preserve">
+    <value>הסעה</value>
+    <comment>הסעה</comment>
+  </data>
+  <data name="PMN01_Shuttles" xml:space="preserve">
+    <value>הסעות</value>
+    <comment>הסעות</comment>
+  </data>
+  <data name="PMN01_TotalOrderValue" xml:space="preserve">
+    <value>סה"כ ערך הזמנה</value>
+    <comment>סה"כ ערך הזמנה</comment>
+  </data>
+  <data name="PMN01_UnitsNumber" xml:space="preserve">
+    <value>משתתף</value>
+    <comment>מספר יחידות</comment>
+  </data>
+  <data name="PMN01_Value" xml:space="preserve">
+    <value>ערך</value>
+    <comment>ערך</comment>
+  </data>
+  <data name="PMN02_AddressToSendInvoice" xml:space="preserve">
+    <value>כתובת לשליחת חשבונית</value>
+    <comment>כתובת לשליחת חשבונית</comment>
+  </data>
+  <data name="PMN02_BalanceDue" xml:space="preserve">
+    <value>יתרה לתשלום בכרטיס אשראי</value>
+    <comment>יתרה לתשלום בכרטיס ארשאי</comment>
+  </data>
+  <data name="PMN02_CardDetailsSecurity" xml:space="preserve">
+    <value>פרטי כרטיס אשראי לביטחון:</value>
+    <comment>פרטי כרטיס אשראי לביטחון:</comment>
+  </data>
+  <data name="PMN02_CardholderName" xml:space="preserve">
+    <value>שם בעל הכרטיס</value>
+    <comment>שם בעל הכרטיס</comment>
+  </data>
+  <data name="PMN02_CardNumber" xml:space="preserve">
+    <value>מספר כרטיס</value>
+    <comment>מספר כרטיס</comment>
+  </data>
+  <data name="PMN02_Check" xml:space="preserve">
+    <value>המחאה</value>
+    <comment>המחאה</comment>
+  </data>
+  <data name="PMN02_EFT" xml:space="preserve">
+    <value>העברה בנקאית</value>
+    <comment>העברה בנקאית</comment>
+  </data>
+  <data name="PMN02_ID" xml:space="preserve">
+    <value>ת.ז./ ח.פ.</value>
+    <comment>ת.ז./ ח.פ.</comment>
+  </data>
+  <data name="PMN02_InvoiceForOtherName" xml:space="preserve">
+    <value>אם ברצונך להפיק חשבונית על שם אחר נא מלא את הפרטים הבאים:</value>
+    <comment>אם ברצונך להפיק חשבונית על שם אחר נא מלא את הפרטים הבאים:</comment>
+  </data>
+  <data name="PMN02_Name" xml:space="preserve">
+    <value>שם</value>
+    <comment>שם</comment>
+  </data>
+  <data name="PMN02_Payment" xml:space="preserve">
+    <value>אמצעי תשלום</value>
+    <comment>אמצעי תשלום</comment>
+  </data>
+  <data name="PMN02_PaymentByCard" xml:space="preserve">
+    <value>לתשלום בכרטיס אשראי</value>
+    <comment>לתשלום בכרטיס אשראי</comment>
+  </data>
+  <data name="PMN02_PaymentByOther" xml:space="preserve">
+    <value>לתשלום באמצעים אחרים</value>
+    <comment>לתשלום באמצעים אחרים</comment>
+  </data>
+  <data name="PMN02_PaymentDistribution" xml:space="preserve">
+    <value>חלוקת התשלום בין המשתתפים</value>
+    <comment>חלוקת התשלום בין המשתתפים</comment>
+  </data>
+  <data name="PMN02_Payments" xml:space="preserve">
+    <value>מספר תשלומים</value>
+    <comment>מספר תשלומים</comment>
+  </data>
+  <data name="PMN02_TotalOrderValue" xml:space="preserve">
+    <value>סה"כ ערך הזמנה</value>
+    <comment>סה"כ ערך הזמנה</comment>
+  </data>
+  <data name="PMN02_Update" xml:space="preserve">
+    <value>עדכן יתרה לתשלום</value>
+    <comment>עדכן יתרה לתשלום</comment>
+  </data>
+  <data name="PMN04_EnterCorrectEmail" xml:space="preserve">
+    <value>הכנס כתובת מייל תקינה</value>
+    <comment>הכנס כתובת מייל תקינה</comment>
+  </data>
+  <data name="PMN04_SendToMail" xml:space="preserve">
+    <value>קבל את מסמכי הרישום במייל</value>
+    <comment>קבל את מסמכי הרישום במייל</comment>
+  </data>
+  <data name="PMN04_SendToMail2" xml:space="preserve">
+    <value>שליחת מסמכי הזמנה לדוא"ל</value>
+    <comment>שליחת מסמכי הזמנה לדוא"ל</comment>
+  </data>
+  <data name="PMN04_TXTEnterEmail" xml:space="preserve">
+    <value>לקבלת מסמכי הזמנה יש להזין את כתובת הדוא"ל הרצויה</value>
+    <comment>לקבלת מסמכי הזמנה יש להזין את כתובת הדוא"ל הרצויה</comment>
+  </data>
+  <data name="PRD02_Base" xml:space="preserve">
+    <value>בסיס ארוח</value>
+    <comment>בסיס ארוח</comment>
+  </data>
+  <data name="PRD02_Clear" xml:space="preserve">
+    <value>נקה בחירה</value>
+    <comment>נקה בחירה</comment>
+  </data>
+  <data name="PRD02_NumRoom" xml:space="preserve">
+    <value>חדר מספר</value>
+    <comment>חדר מספר {0}</comment>
+  </data>
+  <data name="PRD02_Return" xml:space="preserve">
+    <value>חזור לבחירת מלונות</value>
+    <comment>חזור לבחירת מלונות</comment>
+  </data>
+  <data name="PRD03_Flight" xml:space="preserve">
+    <value>המראה</value>
+    <comment>המראה</comment>
+  </data>
+  <data name="PRD03_From" xml:space="preserve">
+    <value>מ</value>
+    <comment>מ</comment>
+  </data>
+  <data name="PRD03_Full" xml:space="preserve">
+    <value>מלא</value>
+    <comment>מלא</comment>
+  </data>
+  <data name="PRD03_Landing" xml:space="preserve">
+    <value>נחיתה</value>
+    <comment>נחיתה</comment>
+  </data>
+  <data name="PRD03_OnePlace" xml:space="preserve">
+    <value>נותר מקום אחד פנוי בטיסה</value>
+    <comment>נותר מקום אחד פנוי בטיסה</comment>
+  </data>
+  <data name="PRD03_PassengersNum" xml:space="preserve">
+    <value>מספר נוסעים</value>
+    <comment>מספר נוסעים</comment>
+  </data>
+  <data name="PRD03_PriceToAdult" xml:space="preserve">
+    <value>מחיר למבוגר</value>
+    <comment>מחיר למבוגר</comment>
+  </data>
+  <data name="PRD03_SumPlace" xml:space="preserve">
+    <value>נותרו {0} מקומות אחרונים בטיסה</value>
+    <comment>נותרו {0} מקומות אחרונים בטיסה</comment>
+  </data>
+  <data name="PRD04_Clear" xml:space="preserve">
+    <value>נקה</value>
+    <comment>נקה</comment>
+  </data>
+  <data name="PRD04_ReturnToFlight" xml:space="preserve">
+    <value>חזור לבחירת טיסות</value>
+    <comment>חזור לבחירת טיסות</comment>
+  </data>
+  <data name="PRD04_Select" xml:space="preserve">
+    <value>בחר</value>
+    <comment>בחר</comment>
+  </data>
+  <data name="PRD04_TotalePrice" xml:space="preserve">
+    <value>סה"כ עלות טיסות</value>
+    <comment>סה"כ עלות טיסות</comment>
+  </data>
+  <data name="PRD05_AnotherProd" xml:space="preserve">
+    <value>מוצר נוסף</value>
+    <comment>מוצר נוסף</comment>
+  </data>
+  <data name="PRD05_Attractions" xml:space="preserve">
+    <value>אטרקציות</value>
+    <comment>אטרקציות</comment>
+  </data>
+  <data name="PRD05_CardPrice" xml:space="preserve">
+    <value>מחיר כרטיס</value>
+    <comment>מחיר כרטיס</comment>
+  </data>
+  <data name="PRD05_Cards" xml:space="preserve">
+    <value>כרטיסים</value>
+    <comment>כרטיסים</comment>
+  </data>
+  <data name="PRD05_CardsToAdult" xml:space="preserve">
+    <value>כרטיסים למבוגר</value>
+    <comment>כרטיסים למבוגר</comment>
+  </data>
+  <data name="PRD05_cardsToChild" xml:space="preserve">
+    <value>כרטיסים לילד</value>
+    <comment>כרטיסים לילד</comment>
+  </data>
+  <data name="PRD05_Clear" xml:space="preserve">
+    <value>נקה בחירה</value>
+    <comment>נקה בחירה</comment>
+  </data>
+  <data name="PRD05_PriceToAdults" xml:space="preserve">
+    <value>מחיר למבוגר</value>
+    <comment>מחיר למבוגר</comment>
+  </data>
+  <data name="PRD05_PriceToChild" xml:space="preserve">
+    <value>מחיר לילד</value>
+    <comment>מחיר לילד</comment>
+  </data>
+  <data name="PRD05_Product" xml:space="preserve">
+    <value>מוצר</value>
+    <comment>מוצר</comment>
+  </data>
+  <data name="PRD05_Select" xml:space="preserve">
+    <value>בחר</value>
+  </data>
+  <data name="PRD05_SelectGuestsToAtractions" xml:space="preserve">
+    <value>בחירת אורחים לאטרקציות</value>
+    <comment>בחירת אורחים לאטרקציות</comment>
+  </data>
+  <data name="PRD05_SoldOut" xml:space="preserve">
+    <value>הכרטיסים אזלו</value>
+    <comment>הכרטיסים אזלו</comment>
+  </data>
+  <data name="PRD09_HalochShuttles" xml:space="preserve">
+    <value>הסעות הלוך</value>
+    <comment>הסעות הלוך</comment>
+  </data>
+  <data name="PRD09_ClearSelection" xml:space="preserve">
+    <value>נקה בחירה</value>
+    <comment>נקה בחירה</comment>
+  </data>
+  <data name="PRD09_PassengerNum" xml:space="preserve">
+    <value>מספר נוסעים</value>
+    <comment>מספר נוסעים</comment>
+  </data>
+  <data name="PRD09_Price" xml:space="preserve">
+    <value>מחיר</value>
+    <comment>מחיר</comment>
+  </data>
+  <data name="PRD09_SelectPassengers" xml:space="preserve">
+    <value>בחירת נוסעים להסעות</value>
+    <comment>בחירת נוסעים להסעות</comment>
+  </data>
+  <data name="PRD09_ShuttleFromEilat" xml:space="preserve">
+    <value>הסעות מאילת</value>
+    <comment>הסעות מאילת</comment>
+  </data>
+  <data name="PRD09_ShuttleToEilat" xml:space="preserve">
+    <value>הסעות לאילת</value>
+    <comment>הסעות לאילת</comment>
+  </data>
+  <data name="PRD09_BackShuttles" xml:space="preserve">
+    <value>הסעות חזור</value>
+    <comment>הסעות חזור</comment>
+  </data>
+  <data name="PRD13_Amount" xml:space="preserve">
+    <value>כמות</value>
+    <comment>כמות</comment>
+  </data>
+  <data name="PRD13_AmountAdult" xml:space="preserve">
+    <value>כמות למבוגר</value>
+    <comment>כמות למבוגר</comment>
+  </data>
+  <data name="PRD13_AmountChild" xml:space="preserve">
+    <value>כמות לילד</value>
+    <comment>כמות לילד</comment>
+  </data>
+  <data name="PRD13_Clear" xml:space="preserve">
+    <value>נקה בחירה</value>
+    <comment>נקה בחירה</comment>
+  </data>
+  <data name="PRD13_Lunch" xml:space="preserve">
+    <value>ארוחת צהרים במלון {0}</value>
+    <comment>ארוחת צהרים במלון {0}</comment>
+  </data>
+  <data name="PRD13_MealsToSelect" xml:space="preserve">
+    <value>ארוחות לבחירה</value>
+    <comment>ארוחות לבחירה</comment>
+  </data>
+  <data name="PRD13_Price" xml:space="preserve">
+    <value>מחיר</value>
+    <comment>מחיר</comment>
+  </data>
+  <data name="PRD13_PriceToAdult" xml:space="preserve">
+    <value>מחיר למבוגר</value>
+    <comment>מחיר למבוגר</comment>
+  </data>
+  <data name="PRD13_PriceToChild" xml:space="preserve">
+    <value>מחיר לילד</value>
+    <comment>מחיר לילד</comment>
+  </data>
+  <data name="PRD13_Prod" xml:space="preserve">
+    <value>מוצר</value>
+    <comment>מוצר</comment>
+  </data>
+  <data name="PRD13_Select" xml:space="preserve">
+    <value>בחר</value>
+    <comment>בחר</comment>
+  </data>
+  <data name="PRD13_SelectGuests" xml:space="preserve">
+    <value>בחירת אורחים לארוחה</value>
+    <comment>בחירת אורחים לארוחה</comment>
+  </data>
+  <data name="PRD09_Select" xml:space="preserve">
+    <value>בחר</value>
+    <comment>בחר</comment>
+  </data>
+  <data name="RGS03_Haifa" xml:space="preserve">
+    <value>חיפה</value>
+    <comment>חיפה</comment>
+  </data>
+  <data name="RGS03_ID" xml:space="preserve">
+    <value>תעודת זהות</value>
+    <comment>תעודת זהות</comment>
+  </data>
+  <data name="RGS03_Jerusalem" xml:space="preserve">
+    <value>ירושלים</value>
+    <comment>ירושלים</comment>
+  </data>
+  <data name="RGS03_North" xml:space="preserve">
+    <value>צפון</value>
+    <comment>צפון</comment>
+  </data>
+  <data name="RGS03_South" xml:space="preserve">
+    <value>דרום</value>
+    <comment>דרום</comment>
+  </data>
+  <data name="RGS03_TelAviv" xml:space="preserve">
+    <value>תל אביב והמרכז</value>
+    <comment>תל אביב והמרכז</comment>
+  </data>
+  <data name="RGS03_Hebrew" xml:space="preserve">
+    <value>בעברית</value>
+    <comment>בעברית</comment>
+  </data>
+  <data name="RGS04_passportNum" xml:space="preserve">
+    <value>מספר דרכון</value>
+    <comment>מספר דרכון</comment>
+  </data>
+  <data name="RGS03_Job" xml:space="preserve">
+    <value>מקום עבודה</value>
+    <comment>מקום עבודה</comment>
+  </data>
+  <data name="RGS03_Job_title" xml:space="preserve">
+    <value>תפקיד</value>
+    <comment>תפקיד</comment>
+  </data>
+  <data name="PRD03_Continue" xml:space="preserve">
+    <value>המשך ללא בחירת טיסות</value>
+    <comment>המשך ללא בחירת טיסות</comment>
+  </data>
+  <data name="PRD03_Left" xml:space="preserve">
+    <value>נותרו</value>
+    <comment>נותרו</comment>
+  </data>
+  <data name="PRD03_To" xml:space="preserve">
+    <value>ל</value>
+    <comment>ל</comment>
+  </data>
+  <data name="PRD04_At" xml:space="preserve">
+    <value>בשעה</value>
+    <comment>בשעה</comment>
+  </data>
+  <data name="PRD04_From" xml:space="preserve">
+    <value>מ</value>
+    <comment>מ</comment>
+  </data>
+  <data name="PRD04_To" xml:space="preserve">
+    <value>ל</value>
+    <comment>ל</comment>
+  </data>
+  <data name="PRD13_Hotel" xml:space="preserve">
+    <value />
+    <comment>במלון</comment>
+  </data>
+  <data name="PRD13_MealAtHotel" xml:space="preserve">
+    <value>ארוחת צהרים במלון</value>
+    <comment>ארוחת צהרים במלון</comment>
+  </data>
+  <data name="RGS05_Fees" xml:space="preserve">
+    <value>בחר דמי רישום ל</value>
+    <comment>בחר דמי רישום ל</comment>
+  </data>
+</root>

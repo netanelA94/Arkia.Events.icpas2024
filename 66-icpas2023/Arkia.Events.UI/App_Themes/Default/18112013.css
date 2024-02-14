@@ -1,0 +1,1013 @@
+﻿/* RESET
+--------------------------------------------------------------------------------------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,audio,canvas,details,figcaption,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,summary,time,video{background:transparent;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}
+body.bodyMain{line-height:1 ;}
+article,aside,dialog,figure,footer,header,hgroup,nav,section,blockquote{display:block}
+.bodyMain.ltr {direction:ltr;}
+.bodyMain ol{list-style:decimal}
+.bodyMain ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+ins{text-decoration:underline}
+del{text-decoration:line-through}
+mark{background:none}
+abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}
+.bodyMain table{border-collapse:collapse;border-spacing:0}
+.bodyMain hr{border:0;border-top:1px solid #ccc;display:block;height:1px;margin:1em 0;padding:0}
+.bodyMain input[type=submit],.bodyMain input[type=button],button{font-family:Arial}
+.bodyMain input,.bodyMain select,.bodyMain a img{vertical-align:middle;outline:0}
+.bodyMain input[type="radio"]{margin:-3px 0 0 0;padding:0}
+ /*Remove button padding in FF*/
+input::-moz-focus-inner{border: 0;padding: 0}
+
+/*מנגנון עקיפת בלוקים*/
+.bodyMain #topNav ul li a { margin: 0 10px;font-size: 20px;}
+.bodyMain a.skip {height: 1px;left: auto;position: absolute;top: -1000px;width: 1px; width: auto;}
+.bodyMain a.skip:focus, a.skip:active {background: #0047ba none repeat scroll 0 0; color:white; height: auto;right:4%;left: auto;padding: 8px; position: absolute;top: 53px;z-index: 1000; text-align: center;font-weight: bold;direction: rtl;}
+
+/************************************************************************************************
+* FOUNDATION, STRUCTURE, FORMS, REUSABLE RULES AND CROSS SITE ELEMENTS                          *
+*************************************************************************************************/	
+
+/* FOUNDATION
+--------------------------------------------------------------------------------------- */
+.bodyMain a{color:#008476;text-decoration:none;outline:none}
+.bodyMain h1,.bodyMain h2,.bodyMain h3,.bodyMain h4,.bodyMain h5,.bodyMain h6{font-weight:normal}
+sup{color:#0047ba;padding-left:2px}
+
+/* FORMS AND INPUTS
+--------------------------------------------------------------------------------------- */
+.bodyMain input[type="text"],.bodyMain select,.bodyMain textarea{color:#213154;font-size:16px;font-family:Arial;border:1px solid #919191;}
+.bodyMain input[type="text"] {height:28px; line-height:28px;}
+.bodyMain select{height:30px; line-height:30px;}
+input[type="text"],input[type="password"]{padding:0 0}/*{padding:0 6px}*/
+.bodyMain .txtLogin {padding:0 6px !important;}
+::-webkit-input-placeholder{color: #aaa !important}
+:-moz-placeholder{color: #aaa !important}
+.placeholder { color: #aaa !important}
+
+/* MAIN STRUCTURE
+--------------------------------------------------------------------------------------- */
+
+ body.bodyMain  {color:#213154;font-size:12px;font-family:Arial, Sans-Serif, "helvetica neue";width:100%;direction: rtl;text-align: right;}
+.bodyMain{background-image:url(images/bg.png);}
+.bodyMain .wrapper{background:#fff;width:1050px;margin:0 auto; border:1px solid #C7C6C6;min-height:760px;-webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);-moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.20);}
+.bodyMain .mainContent{width:100%;clear:both}
+.bodyMain .innerContent{width:1000px; margin:22px 24px 22px 24px;}
+.bodyMain .centerColumn {float:right;width:1000px; margin-top:26px; text-align:center;}
+
+/* REUSABLE STYLES
+--------------------------------------------------------------------------------------- */
+.bodyMain .hidden {display:none}
+.bodyMain .hiddenClass {display:none}
+.bodyMain .notVis{ visibility:hidden}
+.bodyMain .vis{visibility:visible}
+.bodyMain .highlighted {color: #0047ba}
+.bodyMain .underline{text-decoration:underline}
+.bodyMain .clear {clear: both !important;}
+.bodyMain .noFloat {float: none !important;}
+.bodyMain .floatRight {float: right !important;}
+.bodyMain.ltr .floatRight {float: left !important;}
+.bodyMain .floatLeft {float: left !important;}
+.bodyMain.ltr .floatLeft {float: right !important;}
+.bodyMain .noBorder {border-width: 0 !important;}
+.bodyMain .noBorderTop {border-top-width: 0 !important;}
+.bodyMain .noBorderRight {border-right-width: 0 !important;}
+.bodyMain .noBorderBottom {border-bottom-width: 0 !important;}
+.bodyMain .noBorderLeft {border-left-width: 0 !important;}
+.bodyMain .noMargin {margin: 0 !important;}
+.bodyMain .noPadding {padding: 0 !important;}
+.bodyMain .noMarginTop {margin-top: 0 !important;}
+.bodyMain .noMarginRight {margin-right: 0 !important;}
+.bodyMain .noMarginBottom {margin-bottom: 0 !important;}
+.bodyMain .noMarginLeft {margin-left: 0 !important;}
+.bodyMain .marginTop5{margin-Top:5px}
+.bodyMain .marginTop10{margin-Top:10px}
+.bodyMain .marginTop25{margin-top: 25px;}
+.bodyMain .marginBottom5{margin-bottom:5px}
+.bodyMain .marginBottom25{margin-bottom: 25px;}
+.bodyMain .marginBottom10{margin-bottom: 10px;}
+.bodyMain .marginBottomTop10{margin-bottom: 10px;margin-top: 10px;}
+.bodyMain .marginLeft10{margin-left:10px}
+.bodyMain.ltr .marginLeft10{margin-right:10px}
+.bodyMain .marginRight10{margin-right:10px}
+.bodyMain.ltr .marginRight10{margin-left:10px}
+.bodyMain .margin15{ margin:15px}
+
+.bodyMain .noPaddingBottom {padding-bottom: 0 !important;}
+.bodyMain .fixed {position: fixed !important;}
+.bodyMain .relative{position: relative !important}
+.bodyMain .absolute{position: absolute !important}
+.bodyMain .red {color: red !important;}
+.bodyMain .bold{font-weight:700}
+.bodyMain .normal{font-weight:normal}
+.bodyMain .inline-block{display:inline-block;vertical-align:top}
+.bodyMain h1,.bodyMain  h2 {color:#0047ba;margin-left:5px}
+.bodyMain h3{font-size:22px;line-height:1.5;color:#008476;}
+.bodyMain h4.title{font-size:20px;color:#008476;}
+.bodyMain .bold14{font-size:14px;font-weight:700;width:100%;}
+.bodyMain .newLine{float:right;width:100% !important}
+.bodyMain .ellipsis{text-overflow: ellipsis;overflow: hidden;white-space: nowrap}
+.bodyMain .defaultBoldLabel{color: #213154;font-weight: 700;}
+        
+.bodyMain .pie{behavior: url('/icpas2023/App_Themes/Default/PIE.htc');}
+.bodyMain .pieFix{behavior: url('/icpas2023/App_Themes/Default/PIE.htc');position:relative!important}
+
+/* SEPERATORS AND COMPONENTS
+--------------------------------------------------------------------------------------- */
+
+.bodyMain .orangeHeader {height:34px;line-height:36px;border-radius: 8px 8px 0 0;background: #0047ba;}
+.bodyMain .orangeHeader {color:#fff; text-align:right; padding-right:15px; font-size:18px;font-weight:700;margin-top:26px;}
+.bodyMain.ltr .orangeHeader {text-align:left; padding-left:15px;}
+
+.bodyMain .marketingTextBox,.bodyMain  .marketingTextBoxHotel {float:left; width: 25%;height: 270px;background:#fbfbfb;border:1px solid #e3e2e2;padding:10px !important;text-align:right;font-size:14px;color:#213154;border-radius: 2px;}
+.bodyMain.ltr .marketingTextBox, .bodyMain.ltr  .marketingTextBoxHotel {text-align:left; float:right;}
+.bodyMain .marketingTextBox .title,.bodyMain .marketingTextBoxHotel .title {font-weight:700;color:#008476;font-size:14px; line-height: 2; }
+.bodyMain .marketingTextBoxHotel {height: 130px;width: 250px;}
+.bodyMain .solidSep {margin: 5px 5px 5px 5px;height:1px;width:99%;background-color: #cccccc;float:right;}
+.bodyMain .greyPanel {height:30px;background-color: #e8e8e8;float:right;color:#008476; font-size:16px; text-align:right;font-weight:bold;border-radius:2px;width:100%;line-height: 30px;}
+.bodyMain.ltr .greyPanel {float:left; text-align:left !important;}
+.bodyMain .greyPanel .title{width:150px;float:right;margin: 0 10px;}
+.bodyMain.ltr .greyPanel .title {float:left; margin: 0 13px;}
+.bodyMain .greyPanel .lastName{width:198px;float:right;margin: 0 10px;}
+.bodyMain.ltr .greyPanel .lastName {float:left; margin: 0 13px;}
+.bodyMain .greyPanel .firstName{width:198px;float:right;margin: 0 10px;}
+.bodyMain.ltr .greyPanel .firstName {float:left; margin: 0 13px;}
+.bodyMain .greyPanel .dateOfBirth{width:213px;float:right;margin: 0 10px;}
+.bodyMain.ltr .greyPanel .dateOfBirth {float:left; margin: 0 13px;}
+
+.bodyMain .orangeSubTitle{color: #0047ba;font-size: 16px;font-weight: 700;display: inline-block;margin-bottom:20px; }
+.bodyMain.ltr .subTitle {float:none; text-align:left;}
+
+.bodyMain .TotalPrice {border: 2px solid #a1a1a1;border-radius: 6px;height: 45px;position: relative;font-size: 20px;color: #008476;line-height: 45px;padding-right: 15px}
+.bodyMain.ltr .TotalPrice {padding-right: 0px; padding-left:15px; text-align:left;}
+.bodyMain .totalPriceMark{width: 150px;height: 100%;background-color: #e8e8e8;float: left;border-radius: 6px 0 0 6px;text-align: center;}
+.bodyMain.ltr .totalPriceMark {float:right; border-radius: 0 6px 6px 0;}
+
+
+.bodyMain .selectName{width:200px;}
+.bodyMain .ribbon{border-left:1px solid #009989;display:inline-block;vertical-align:top;width:255px;height:33px;position:relative;bottom: -2px;border-radius:4px 4px 0 0;background: #009989}
+.bodyMain.ltr .ribbonWrap {text-align:left;}
+.bodyMain .ribbonCorner{width:23px;height:33px;background:url('images/sprite01.png') no-repeat -1px -58px;display:inline-block;position:relative;right:-5px;bottom: -2px;}
+.bodyMain.ltr .ribbonCorner{background:url('images/sprite01_eng.png') no-repeat -1px -58px;left:-5px;}
+.bodyMain .ribbonBox{border-radius: 7px 0 7px 7px;padding: 20px 30px !important;border: 1px solid #A7A6A6;overflow: hidden;margin-bottom: 28px;width:auto}
+.bodyMain.ltr .ribbonBox{border-radius: 0 7px 7px 7px;}
+.bodyMain .ribbon span{font-size:18px;font-weight:700;color:#fff;height:27px;line-height:33px;margin-right:12px}
+.bodyMain.ltr .ribbon span {float:left; margin-left:12px; margin-right:0;}
+
+.bodyMain .loader{background:url(Images/loading.gif) no-repeat -0px -0px;width:50px;height:50px;margin: 80px auto;}
+.bodyMain .loaderClick{background:url(Images/loading.gif) no-repeat -0px -0px;width:50px;height:50px;margin: 10px 25px;float:left;}
+
+.bodyMain .loaderWizardContent {height:435px;}
+/* ICONS AND LOGOS
+--------------------------------------------------------------------------------------- */
+.bodyMain .servicePhone{background:url(Images/sprite01.png) no-repeat -15px -0px;width:15px;height:15px;text-align:center;margin:2px 0 0 2px;display:inline-block;margin-left: 5px;}
+.bodyMain.ltr .servicePhone{background:url(Images/sprite01_eng.png) no-repeat -15px -0px;}
+.bodyMain .blueArrow {background:url(Images/sprite01.png) no-repeat -7px -0px;width:8px;height:11px;text-align:center;margin:5px 5px 0 2px;}
+.bodyMain.ltr .blueArrow {background:url(Images/sprite01_eng.png) no-repeat -7px -0px;}
+.bodyMain .wizardBlueArrow{background:url(Images/sprite01.png) no-repeat -6px -0px;width:6px;height:10px;}
+.bodyMain.ltr .wizardBlueArrow{background:url(Images/sprite01_eng.png) no-repeat -6px -0px;}
+.bodyMain .wizardGrayArrow{background:url(Images/sprite01.png) no-repeat -0px -0px;width:6px;height:10px;}
+.bodyMain.ltr .wizardGrayArrow{background:url(Images/sprite01_eng.png) no-repeat -0px -0px;}
+
+
+/* BUTTONS
+--------------------------------------------------------------------------------------- */
+.bodyMain .btnContinue {min-width:180px;height:35px; cursor:pointer;margin-top: 17px;float: left;background: #FFFFFF;border-radius: 6px;color: #ffffff;font-size: 20px;border: solid #A7A6A6 1px;text-decoration: none;
+              background-image: -webkit-linear-gradient(top, #FFFFFF 0%,#f3f3f3 50%,#E6E6E6 100%);background-image: -moz-linear-gradient(top, #FFFFFF 0%,#f3f3f3 50%,#E6E6E6 100%);background-image: -ms-linear-gradient(top, #FFFFFF 0%,#f3f3f3 50%,#E6E6E6 100%);background-image: -o-linear-gradient(top, #FFFFFF 0%,#f3f3f3 50%,#E6E6E6 100%);background-image: linear-gradient(to bottom, #FFFFFF 0%,#f3f3f3 50%,#E6E6E6 100%);-webkit-border-radius: 6;-moz-border-radius: 6;
+               -pie-background:linear-gradient(top,  #fdfdfd 0%,#fcfbfc 19%,#e7e7e7 52%,#e7e7e7 100%)}
+.bodyMain.ltr .btnContinue {float: right;}
+.bodyMain .btnContinueText {float:left;right:80px;color:#0047ba;font-weight:700;line-height: 35px;padding: 0px 15px 0px 15px;}
+.bodyMain .btnContinueInner {background:url(Images/sprite01.png) no-repeat 0px -22px;font-family: Arial;font-size: 20px;padding: 5px 6px 5px 10px;text-decoration: none; text-align:right;width:60px; height:25px;float:right;cursor:pointer;}
+.bodyMain.ltr .btnContinueInner {background:url(Images/sprite01_eng.png) no-repeat 0px -22px;padding: 5px 10px 5px 6px;margin-left:-1px; text-align:left;float:left; width:78px;}
+
+/* ERRORS
+--------------------------------------------------------------------------------------- */
+.bodyMain .inputError {background:#fed4d5;}
+.bodyMain .errorFlag {background:url(Images/sprite01.png) no-repeat 0px -91px;width:98px;height:30px;float:right;margin:5px;}
+.bodyMain.ltr .errorFlag {background:url(Images/sprite01_eng.png) no-repeat 0px -91px;float:left;}
+.bodyMain .msgBox {position:relative; display:none; float:right; margin: 4px 0 0 5px;padding:5px; border: 2px solid #ef0808; background-color: #FFF; color:#ef0808;border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; z-index:999; min-width: 986px; margin-bottom: 20px;}
+.bodyMain .msgBox ul {float:right;}
+.bodyMain.ltr .msgBox ul {float:left;}
+.bodyMain .msgBox li:before {color:#ef0808;}
+.bodyMain .msgBox li { list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAGCAIAAABrW6giAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAaSURBVBhXY/z//z8DHLxnZ4cjBiI5QAPgAACoxx7DdYRSkQAAAABJRU5ErkJggg=='); padding-right:6px; margin:3px 30px 3px 3px;line-height:14px;}
+.bodyMain.ltr .msgBox li {padding-left:6px;}
+.bodyMain .msgBox .content { font: normal 12px Arial, Sans-Serif, "helvetica neue"; padding: 0px;float:right;}
+.bodyMain.ltr .msgBox .content { float:left; padding-left:25px;}
+.bodyMain .msgBox .close { border: 1px solid #C7C6C6;border-radius: 3px;color: #C7C6C6; display: block;  float: left; margin: 0 0 0 5px; outline-style: none;  padding: 0 2px 0 2px; position: relative; text-align: center;text-decoration: none;}
+.bodyMain.ltr .msgBox .close {float: right;}
+.bodyMain .msgBox .close:hover{ color: #0047ba;border: 1px solid #C7C6C6; }
+.bodyMain .msgBoxOuter {margin-bottom:0 !important;}
+.bodyMain .msgBoxOuter .content {color: #213154;text-align: right;z-index: 88;clear: both;}
+.bodyMain.ltr .msgBoxOuter .content {text-align: left;}
+/* popup
+----------------------------------------------------------------------------------------------- */
+.bodyMain .popupWrapper {width: 600px;margin: 20px auto 30px auto;}
+
+/* INFOBOX
+----------------------------------------------------------------------------------------------- */
+.bodyMain .infoBox {border:1px solid #0047ba;border-radius:2px;padding: 6px 8px;overflow: hidden;margin-bottom:10px}
+.bodyMain .infoBoxBubble {width: 18px;height: 20px;float: right;background: url(Images/sprite01.png) no-repeat -30px 0;margin-left: 10px;}
+.bodyMain.ltr .infoBoxBubble {float:left;margin-left: 0; margin-right: 10px;}
+.bodyMain .infoBox ul {float:right;margin-right: 15px;}
+.bodyMain.ltr .infoBox ul {float:left;margin-right: 0; margin-left:15px;}
+.bodyMain .infoBox ul li {list-style-type: square;padding-right:6px;margin:3px;line-height:14px;text-align: right;}
+.bodyMain.ltr .infoBox ul li {padding-right:0; padding-left:6px; text-align: left;}
+
+/************************************************************************************************
+* HEADER, MAIN NAVIGATION AND FOOTER                                                            *
+*************************************************************************************************/	
+
+/* SITE HEADER
+--------------------------------------------------------------------------------------- */
+.bodyMain .headerWrapper{border-width: 1px;border-style: solid; border-color: #A7A6A6;width:1000px;height:134px;}
+    .bodyMain .headerBanner {
+        width: 1000px;
+        height: 100%;
+        background: url(Images/logo.jpg) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+/* FOOTER
+--------------------------------------------------------------------------------------- */
+.bodyMain .footerWrapper {border-width: 1px;border-style: solid; border-color: #A7A6A6; border-radius: 8px 8px 8px 8px; width:1000px; margin-top:80px; height:100px;}
+.bodyMain .footerWrapper h3 {text-align:center;font-size:20px;}
+.bodyMain .footerWrapper .linksList {width:100%; float:right;text-align: center;}
+.bodyMain .footerWrapper .linksList ul {display:inline-block;text-align:center;}
+.bodyMain .footerWrapper .linksList ul li{ float:right;color:#4F4F4F;line-height:1; margin:4px auto; font-size:15px;border-left:1px solid #A7A6A6;}
+.bodyMain .footerWrapper .linksList ul li:last-child{border-left:none;}
+.bodyMain .footerWrapper .linksList ul li a{display:block;margin: 0 12px 0 12px;color:#4F4F4F;}
+.bodyMain .footerWrapper .linksList ul li a:hover{text-decoration: underline;}
+.bodyMain .footerWrapper .contacts {text-align:center;margin-top:8px;width: 100%;}
+.bodyMain .footerWrapper .contacts li{border:none !important;display:inline-block;}
+.bodyMain .copyrights {font-size:15px; color:#4F4F4F; line-height:1.7;text-align: center;}
+
+/************************************************************************************************
+* PAGES                                                                                         *
+*************************************************************************************************/	
+
+/* LANDINGPAGE
+----------------------------------------------------------------------------------------------- */
+.bodyLanding {font-family: Heebo;}
+.bodyLanding #header {width: 100%; height: 350px; background: url(Images/logo-home.jpg) no-repeat;}
+.bodyLanding #main  {width: 100%; height: 870px; background-image: linear-gradient(179deg, rgba(248, 250, 252, 0.13) 7%, rgba(238, 242, 247, 0.58) 108%);}
+.bodyLanding .landingPageWrapper {width: 1270px; margin-right: auto; margin-left: auto; height: 870px;}
+.bodyLanding .landingPageWrapper #subHeader {width: 1270px; height: 127px; padding: 24px 110px 23px; box-shadow: 0 7px 23px -7px rgba(36, 37, 51, 0.2); border: solid 1px #e9ecf1; border-radius: 12px; background-color: #fff; font-size: 40px; font-weight: bold; line-height: 2; text-align: center; color: #2456a6; position: relative; top: -68.5px; }
+.bodyLanding .landingPageWrapper .info {font-size: 20px; text-align: right; color: #2456a6; line-height: 1.5; margin: 0 16px 50px 20px; direction: rtl;}
+.bodyLanding .landingPageWrapper .message {font-size: 40px; color: #2456a6; text-align: center; margin-top: 100px;}
+.bodyLanding .linksWrapper { width: 1000px;}
+.bodyLanding .linksWrapper .card {width: 407px; height: 145px; margin: 0 0 33px 50px; padding: 20px 25px 37px 20px; border-radius: 11px; box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1); border: solid 1px #e9ecf1; background-color: #fff; text-align: right; position: relative; float: right; text-decoration: none; direction: rtl;}
+.bodyLanding .linksWrapper .card .icon {width: 30px; height: 30px; background: url(Images/conference.svg) no-repeat; position: absolute; right: 25px; top: 55px;}
+.bodyLanding .linksWrapper .card .name {margin-bottom: 40px; margin-right: 58px; font-size: 27px; font-weight: bold; color: #253858;}
+.bodyLanding .linksWrapper .card .text {margin-right: 58px; font-size: 18px; line-height: 1.11; color: #253858;}
+.bodyLanding .linksWrapper .card .date {width: 30%; float: right; font-size: 22px;}
+.bodyLanding .linksWrapper .card .arrow {width: 11px; height:11px; display: inline-block; border: solid #0063ff; border-width: 0 2.5px 2.5px 0; transform: rotate(135deg); position:absolute; left: 20px; top: 68px;}
+
+/* HOMEPAGE
+----------------------------------------------------------------------------------------------- */
+.bodyMain .mainGreetings {border-width: 1px;border-style: solid; border-color: #A7A6A6;border-radius: 8px 8px 8px 8px; width:1000px;min-height:328px;margin-top: 26px;}
+.bodyMain h3{margin-right:25px;}
+.bodyMain h1.title{font-size:34px; margin:30px 25px 15px 25px;}
+.bodyMain.ltr .mainGreetings {text-align:left; }
+.bodyMain.ltr h3{margin-left:25px;}
+
+.bodyMain .mainGreetings .headerTitle {width: 100%;text-align: center;color: #fff;border-radius: 8px 8px 0px 0px;}
+
+
+/* GNR01
+----------------------------------------------------------------------------------------------- */
+
+.bodyMain .errorTitle{font-size:20px;line-height: 50px;margin-bottom: 10px;margin-right: 25px;}
+.bodyMain.ltr .errorTitle{margin-left: 25px; text-align:left; margin-right:0;}
+.bodyMain .errorTextMarketing{font-size:18px;line-height: 35px;margin-right: 25px;}
+.bodyMain.ltr .errorTextMarketing{text-align:left;}
+.bodyMain .errorlink{line-height: 35px;margin-right: 25px;}
+.bodyMain.ltr .errorlink{float:left;}
+
+/* RGS01
+----------------------------------------------------------------------------------------------- */
+
+.bodyMain .mainContentBox { border-right:1px solid #A7A6A6;border-left:1px solid #A7A6A6; border-bottom:1px solid #A7A6A6;color:#4F4F4F;border-radius: 0 0 8px 8px;min-height:290px;padding:30px;}
+.bodyMain .loginWrapper {width:68%;margin: 52px 25px auto auto;float:right; text-align:center;}
+.bodyMain.ltr .loginWrapper {float:left; margin: 52px auto auto 25px;}
+.bodyMain .loginWrapper h4 {width:30%; float:right;line-height:2;font-size:16px;color: #213154;font-weight: 700;}
+.bodyMain.ltr .loginWrapper h4 {float:left; text-align:left;}
+.bodyMain .loginWrapper input{width:50%;}
+.bodyMain .loginWrapper .row{margin-right: 20%;width: 50%;height: 50px;}
+.bodyMain.ltr .loginWrapper .row{margin-right: 0; margin-left: 20%;}
+.bodyMain .loginValidation{color:#cd193b;font-weight:700;font-size:13px; margin-right: 30%;}
+.bodyMain.ltr .loginValidation{ margin-left: 30%; margin-right: 0}
+.bodyMain .mWrapper {border-width: 1px;border-style: solid; border-color: #A7A6A6; border-radius: 8px 8px 8px 8px; width:1000px; margin-top:10px; }
+.bodyMain.ltr .mWrapper {float: left;}
+.bodyMain .mWrapperTitle { float: right;font-size: 17px;font-weight: 700;text-decoration: underline;line-height: 2;}
+.bodyMain.ltr .mWrapperTitle {float:left;}
+.bodyMain .mWrapper .marketingText{  margin-top: 10px;  width: 100%;display: inline-block;}
+.bodyMain .roommatesBox .lbl {    width: 120px; display: inline-block; font-weight:700;}
+.bodyMain .roommatesRow, .roommatesRowC {    margin: 20px 0;     height: 35px;}
+.bodyMain.ltr .roommatesRowC, .bodyMain.ltr .roommatesRow  {text-align:left;}
+.bodyMain.ltr .roommatesBox .lbl {text-align:left; width:185px;}
+.bodyMain .displayI .lbl {margin-right:40px;}
+.bodyMain.ltr .displayI .lbl {margin-left:40px; margin-right:0; width: 200px;}
+.bodyMain .roommatesRow.rr2 {display:none;}
+.bodyMain .roommateClear{    float: left;line-height: 2;margin-top: 8px;    text-decoration: underline; cursor:pointer;}
+.bodyMain.ltr .roommateClear { float:right;}
+.bodyMain .displayI{display:inline-block}
+.bodyMain .roommatePhone { width: 140px;margin-left: 28px;}
+.bodyMain .roommateArea_code {width: 63px;}
+.bodyMain.ltr .roommatePhone, .bodyMain.ltr .roommateArea_code {text-align:left;}
+/* RGS02
+----------------------------------------------------------------------------------------------- */
+.bodyMain .mainContentBoxExt {min-height:290px;}
+.bodyMain.ltr .mainContentBoxExt {text-align:left;}
+.bodyMain .mainContentBoxExt .lapWrapper {width:65%; margin-top: 15px;float:right; text-align:right;}
+.bodyMain.ltr .mainContentBoxExt .lapWrapper {float:left; text-align:left;}
+.bodyMain .linkSimple, .linkSimple a {font-weight:normal;color:#008476;font-size:13px;float:right;text-decoration: underline;}
+.bodyMain.ltr .linkSimple, .ltr .linkSimple a {float:left;}
+.bodyMain .regulations {font-weight:normal;color:#4F4F4F;font-size:13px;float:right;margin-right: 20px;}
+.bodyMain.ltr .regulations {float:left; margin-left:20px;}
+.bodyMain .bottomLink {position:relative; top:13px;}
+.bodyMain .linkCatalog {font-weight:700;color:#008476;font-size:18px;float:right;margin: 15px 5px;}
+.bodyMain.ltr .linkCatalog {float:left;}
+.bodyMain .linkCatalog a {text-decoration: underline;}
+.bodyMain .linkCatalog li{border:none !important;display:inline-block;float: right;}
+.bodyMain.ltr .linkCatalog li{float: left;}
+
+.bodyMain .lapName {width:330px;float:right;font-size:16px;}
+.bodyMain.ltr .lapName {float:left;}
+.bodyMain .lapRbt {width:405px;float:right;font-size:16px;}
+.bodyMain.ltr .lapRbt {float:left;}
+.bodyMain.ltr .lapRbt label {direction:rtl;}
+.bodyMain .lapRbt input[type="radio"]{margin: -4px 0 0 5px;}
+.bodyMain.ltr .lapRbt input[type="radio"]{margin: -4px 25px 0 0;}
+.bodyMain .lapWrapper li {padding-bottom: 55px;}
+.bodyMain .IdNoExists { color:#cd193b; font-weight:700; font-size:13px; margin-right: 60%;}
+
+/* RGS03
+----------------------------------------------------------------------------------------------- */
+.bodyMain .personalInfoRow { width:462px;}
+.bodyMain .personalInfoRow label { width: 115px;margin-right: 25px;color: #213154;font-weight: 700;}
+.bodyMain.ltr .personalInfoRow label { margin-right: 0; margin-left:25px; width:160px;}
+
+.bodyMain .personalInfoRow input {width: 237px;margin-left:25px; text-align:right;}
+.bodyMain.ltr .personalInfoRow input {margin-left:0; margin-right:25px; text-align:left;}
+.bodyMain .personalInfoRow .input30 {width:140px;margin-left: 28px;}
+.bodyMain.ltr .personalInfoRow .input30 {margin-left: 0; margin-right:28px}
+.bodyMain .personalInfoRow .input10 {width:63px;}
+.bodyMain .personalInfoRow .dateSelect{width: 70px;float: right;margin-left: 15.5px;}
+.bodyMain.ltr .personalInfoRow .dateSelect{float: left; margin-left: 0; margin-right: 15.5px;}
+.bodyMain .generalRow,.bodyMain  .personalInfoRow,.bodyMain  .hotelsHalfRow,.bodyMain  .hotelInfoRow {float:right;height: 40px; margin-bottom:20px;}
+.bodyMain.ltr  .personalInfoRow, .bodyMain.ltr  .hotelsHalfRow,.bodyMain.ltr  .hotelInfoRow {float:left !important; text-align:left !important;}
+.bodyMain .generalRow,.bodyMain .personalInfoRow,.bodyMain  .accompaniedRow,.bodyMain  .hotelsHalfRow,.bodyMain .hotelInfoRow {font-size: 16px;text-align: right;line-height: 25px;}
+.bodyMain.ltr .generalRow,.bodyMain.ltr .personalInfoRow,.bodyMain.ltr .accompaniedRow,.bodyMain.ltr  .hotelsHalfRow,.bodyMain.ltr .hotelInfoRow {text-align:left;}
+.bodyMain .generalRow label,.bodyMain  .personalInfoRow label,.bodyMain  .accompaniedRow label {float:right;}
+.bodyMain.ltr .personalInfoRow label, .bodyMain.ltr .accompaniedRow label {float:left;}
+
+/* RGS04
+----------------------------------------------------------------------------------------------- */
+
+.bodyMain .accompaniedRow { width:100%;}
+.bodyMain .accompaniedRow select { width:70px;float:right; padding-right: 5px; margin: 0 5px 0 12px;}
+.bodyMain.ltr .accompaniedRow select {width:77px;float:left; padding-left: 5px; margin: 0 12px 0 5px;}
+.bodyMain .accompaniedRow input {width:185px;padding: 0px 7px;margin: 0 5px 0 12px;}
+.bodyMain .accompaniedRow a {width: 30px;margin: 1px 12px;font-size:14px;color:#008476;text-decoration:underline; float:left;}
+.bodyMain.ltr .accompaniedRow a {float:right;margin:1px 0;}
+.bodyMain .accompaniedAddLink { width:80px; margin: 10px; font-size:14px; color:#008476; text-decoration:underline; float:right; font-weight: 700;}
+.bodyMain.ltr .accompaniedAddLink {float:left; text-align:left; width:120px;}
+.bodyMain .accompaniedAdd { width:23px; height: 16px;margin: 10px 0;float: right;background: url(Images/sprite01.png) no-repeat -49px 0;}
+.bodyMain.ltr .accompaniedAdd {float:left;}
+.bodyMain .accSolidSep {margin: 5px 5px 5px 5px;height:1px;width:99%;background-color: #cccccc;}
+.bodyMain .accompaniedDDRow {    display: inline-block;width: 100%;height: 40px;}
+.bodyMain .accPassLbl {    display: inline-block;margin-left: 15px;width: 198px;    text-align: left;}
+.bodyMain.ltr .accPassLbl {margin-left:0px; margin-right: 15px; text-align:right;}
+.bodyMain .passportBox1>.floatRight {margin-right: 174px;}
+.bodyMain.ltr .passportBox1>.floatRight {margin-left: 188px; margin-right:0;}
+
+/* RGS05
+----------------------------------------------------------------------------------------------- */
+
+.bodyMain .feesRow {width:100%;float:right;margin-bottom:20px;height: 40px;font-size: 16px;line-height: 30px;}
+.bodyMain .lblPrice {font-size:16px;color:#008476;font-weight: 700; width:50px;margin: 0 10px;}
+.bodyMain .feesRow .lblPrice{width: 230px;float: right;}
+.bodyMain.ltr .feesRow .lblPrice {text-align:left;}
+.bodyMain .feecell {width: 300px;float: right;padding-right: 5px;margin: 0 5px 0 12px;}
+.bodyMain.ltr .feesRow .lblselect {float:left; padding-left: 5px; margin: 0 12px 0 5px;}
+.bodyMain .feesOptions {width: 330px;}
+.bodyMain .feesRooms {width: 80px;margin-right: 10px;}
+.bodyMain .feesBox{display: inline-block;width: 100%;min-height: 150px;}
+.bodyMain.ltr .feesRow .lblname {float:left;}
+
+
+/* PRD01
+----------------------------------------------------------------------------------------------- */
+.bodyMain.ltr .wrapTitle {float:left;}
+.bodyMain .compVi {float: right;width: 10px;height: 10px;background: url('images/sprite01.png') no-repeat -72px -0px;margin: 5px 0 0 5px;}
+.bodyMain.ltr .compVi {float:left; margin: 5px 5px 0 0;}
+.bodyMain .compLi {margin-left: 25px;}
+.bodyMain.ltr .compLi {margin-right: 25px; margin-left:0;}
+.bodyMain .hotelsInfoRow, .hotelsInfoRowH180 {text-align: right;float: right;width: 100%;}
+.bodyMain.ltr .hotelsInfoRow, .hotelsInfoRowH180 {text-align: left;float: left;}
+.bodyMain .hotelsInfoRow {margin: 20px 0 0 0;}
+.bodyMain .hotelsInfoRowH180 {height: 180px;margin: 20px 0 0px 0;}
+.bodyMain .hotelsHalfRow {width:462px;} 
+.bodyMain .hotelsInfoLabel {width:125px; margin: 18px 0 0px 20px !important; float:right;height: 30px;font-size: 14px;font-weight:700;}
+.bodyMain.ltr .hotelsInfoLabel {float:left; width:147px;}
+.bodyMain .selectHotels {width: 272px;margin: 12px 0 12px 20px;float: right;}
+.bodyMain .greyPanel .roomNum {width:40px;float:right;margin: 0 10px;}
+.bodyMain.ltr .greyPanel .roomNum {float:left;}
+.bodyMain .greyPanel .roomType {width: 340px;float:right;margin: 0 10px;}
+.bodyMain.ltr .greyPanel .roomType {float:left;}
+.bodyMain .greyPanel .roomComp {width:180px;float:right;margin: 0 10px;}
+.bodyMain.ltr .greyPanel .roomComp {;float:left;}
+.bodyMain .greyPanel .roomInfants {width:60px;float:right;margin: 0 10px;}
+.bodyMain.ltr .greyPanel .roomInfants {float:left;}
+.bodyMain .hotelsResultRow { width:100%;    display: inline-block;}
+.bodyMain .hotelsResultRow select, .hotelsResultRow label{ height:30px;font-size:14px;margin-bottom: 20px;}
+.bodyMain .hotelsResultRow .roomNumLbl {width:50px;float:right;margin: 10px 20px 0 0;font-weight: 700;}
+.bodyMain.ltr .hotelsResultRow .roomNumLbl {float:left; margin: 10px 0 0 20px; text-align:left;}
+.bodyMain .hotelsResultRow .roomTypeSel {width: 300px;float:right;margin-left: 60px;}
+.bodyMain.ltr .hotelsResultRow .roomTypeSel {float:left; margin-right:60px; margin-left: 0px;}
+.bodyMain .hotelsResultRow .roomCompSel {width:137px;float:right;margin-left: 60px;}
+.bodyMain.ltr .hotelsResultRow .roomCompSel {float:left; margin-right:60px; margin-left:0}
+.bodyMain .hotelsResultRow .roomInfantsSel {width:137px;float:right;}
+.bodyMain.ltr .hotelsResultRow .roomInfantsSel {float:left;}
+.bodyMain .roomCompPrice {color: #008476;
+                          font-size: 24px;
+                          float: left; margin-left:20px;}
+.bodyMain.ltr .roomCompPrice {float: right; margin-right:20px; margin-left:0;}
+.bodyMain .hotelDesc {display: inline-block;clear: both;width:908px;border: 1px solid #0047ba;border-radius: 2px;margin-bottom: 10px;padding: 5px 7px !important;overflow: hidden;}
+.bodyMain.ltr .hotelDesc {text-align:left;}
+.bodyMain .childAge {margin: 0 435px 0 127px; color: red;}
+.bodyMain .infantAge { color: red;}
+
+/* PRD02
+----------------------------------------------------------------------------------------------- */
+.bodyMain .hotelsRowThird {width:622px;float:right;}
+.bodyMain.ltr .hotelsRowThird {float:left;}
+.bodyMain .hotelInfoRow {width:55%;color: #213154;height:auto;}
+.bodyMain .hotelInfoRow label {width:17%;margin:10px 0;font-weight: 700;float: right;}
+.bodyMain.ltr .hotelInfoRow label {float: left;}
+.bodyMain .hotelInfoRow select {width:70%; margin:10px;}
+.bodyMain .hotelComments {width:100%; float:right;padding: 15px 0px 0 10px;}
+.bodyMain.ltr .hotelComments {float:left; text-align:left;}
+.bodyMain .hotelComments label {width:100%; margin:15px 0; margin: 0 10px;}
+.bodyMain .hotelComments textarea {width:70%; height:50px;margin: 15px 10px 0 2px;}
+.bodyMain.ltr .hotelComments textarea {float:right;}
+.bodyMain .hotelCommentsTitle { margin-right:10px;}
+.bodyMain.ltr .hotelCommentsTitle { margin-left:10px; margin-right: 0px;}
+.bodyMain .roomPrice {width:45%; float:right;}
+.bodyMain .roomPrice label {color:#008476; font-size:24px;float: left;margin-left: 50px;}
+.bodyMain.ltr .roomPrice label {float:right; margin-right:50px;}
+.bodyMain a.clearForm ,.bodyMain   a.clearForm:visited,.bodyMain  a.clearForm:hover {float:left; margin: 7px 0 5px 10px;color: #213154;text-decoration: underline;font-size: 13px;font-weight: normal;line-height: 13px;cursor: pointer;}
+.bodyMain.ltr a.clearForm ,.bodyMain.ltr a.clearForm:visited,.bodyMain.ltr a.clearForm:hover {float:right; margin: 7px 10px 5px 0;}
+.bodyMain .margin10 {margin: 10px;}
+.bodyMain .boardsLine {float: right;margin-top: 15px;}
+.bodyMain.ltr .boardsLine {float: left; text-align:left;}
+
+/* PRD03 ,PRD04
+----------------------------------------------------------------------------------------------- */
+
+.bodyMain .titleSeperator{position:relative;top:15px;margin-bottom:30px}
+.bodyMain .titleSeperator .title{font-size:16px;font-weight:700;background:#fff;text-align:center;color:#0047ba;display:block;position:absolute;top:-10px;left:50%;margin-left:-70px;width:160px}
+.bodyMain.ltr .titleSeperator .title {width: 245px; margin-left:-110px;}
+.bodyMain .titleSeperator .stroke{height:2px;background:#0047ba}
+.bodyMain .borderSeperator{width:100%;height:1px;border-bottom:1px dotted #aaa;float:left;margin-top:10px}
+.bodyMain .flightRow{font-size: 14px;line-height: 55px;}
+.bodyMain .flightRow span{display: inline-block;width: 112px;}
+.bodyMain .flightRow span.long{width: 160px;}
+.bodyMain.ltr .flightRow span.long{width: 200px;}
+.bodyMain .flightRow span.last{width: 175px;}
+.bodyMain .flightRow span.first, .bodyMain .flightRow .flightName {width: 145px;}
+.bodyMain.ltr .flightRow span.first, .bodyMain.ltr .flightRow .flightName {width: 225px;}
+.bodyMain .flightRow select{width: 50px;}
+.bodyMain .flightSeparator {height:1px;background:#e3e3e3}
+.bodyMain .lastPrice {color:#0047ba;}
+.bodyMain .passItem {padding: 12.5px 0;}
+.bodyMain.ltr .passItem {text-align:left;}
+.bodyMain .flightSeperator {padding-bottom: 12.5px;}
+.bodyMain .lblFlightPrice {margin-left:35px; font-size:18px;color:#008476; text-align:left;float:left;}
+.bodyMain.ltr .lblFlightPrice {margin-right:35px; float:right;}
+.bodyMain .clearFlight {margin: 08px 12px 0 12px;color: #4F4F4F;text-decoration: underline;font-weight:700;font-size:15px;color:#008476;}
+.bodyMain .cbflights label {color: #008476;}
+.bodyMain input#cbFlightProcFileName{margin:0 0 0 5px}
+.bodyMain.ltr input#cbFlightProcFileName{margin:0 5px 0 0}
+
+/* PRD05
+----------------------------------------------------------------------------------------------- */
+.bodyMain .lblShowName {width:320px;float:right;margin: 0 10px;}
+.bodyMain.ltr .lblShowName {float:left; font-size:14px;}
+.bodyMain .colShowName {width:360px;float:right;}
+.bodyMain.ltr .colShowName {float:left;}
+.bodyMain .lblShowPrice {width:110px;float:right;font-size: 16px;color: #008476;font-weight:700;}
+.bodyMain.ltr .lblShowPrice {float:left; text-align:left; font-size:14px;}
+.bodyMain .lblShowTickets {width:130px;float:right;}
+.bodyMain .cellProductsPrice {width:110px;float:right;height: 100%}
+.bodyMain.ltr .cellProductsPrice {float:left;}
+.bodyMain .cellProductsTickets {width:130px;float:right;height: 100%}
+.bodyMain.ltr .cellProductsTickets {width:160px;float:left; text-align:left; font-size:14px;}
+.bodyMain .cellProductsTickets select {width:65px;}
+.bodyMain .cellChildAge {text-align: center; width: 67px; font-size: small; line-height: 1.5;}
+.bodyMain.ltr .cellChildAge {width:55px;}
+.selectPassAge {font-size: 15px;font-weight: 500;width: 150px;}
+.bodyMain.ltr .selectPassAge {float:left;}
+.bodyMain.ltr .cbNoLunch {float:left;}
+.bodyMain #PRD09 .lblShowName, .bodyMain #PRD13 .lblShowName{width: 340px;}
+.bodyMain #PRD09 .lblShowPrice {width: 100px;}
+
+/* PMN01
+----------------------------------------------------------------------------------------------- */
+
+.bodyMain .summaryCell {width:350px;margin: 0 10px;display:inline-block;}
+.bodyMain .smallSummaryCell {width:100px;margin: 0 10px;display:inline-block;}
+.bodyMain .summaryRow {line-height:40px; font-size:14px;}
+.bodyMain .summaryBox .ribbon {width:400px;}
+.bodyMain .summaryBox .ribbon span {font-size:16px}
+
+/* PMN02, PMN03
+----------------------------------------------------------------------------------------------- */
+
+.bodyMain .paymentBox {min-height: 500px;display: inline-block;width: 100%;}
+.bodyMain .paymentRightBox {width: 620px;float: right;}
+.bodyMain.ltr .paymentRightBox {float: left;}
+.bodyMain .paymentRow {line-height:55px; width:100%; font-size:14px;}
+.bodyMain.ltr .paymentRow {text-align:left;}
+.bodyMain .paymentRow label{display:inline-block; min-width: 150px;}
+.bodyMain .paymentRow input.long{ width:200px;}
+.bodyMain .paymentRow input.short{ width:112px;}
+.bodyMain .paymentRow select{ width:114px;}
+.bodyMain .paymentSecurity {color: #0047ba;font-size: 18px;font-weight: 700;}
+.bodyMain .paymentTypes {font-size: 16px;font-weight: 700;margin-bottom: 10px;}
+.bodyMain .paymentType {display:inline-block; min-width: 150px;font-weight: 700;line-height: 25px; font-size:14px;}
+.bodyMain.ltr .paymentType, .bodyMain.ltr .paymentTypes  {text-align:left;}
+.bodyMain .paymentType label{display:inline-block; min-width: 150px;}
+.bodyMain .dialogBox {border: 2px solid #c4c5c9;border-radius: 8px;background: #fff;overflow: hidden;}
+.bodyMain #pciDialog {width: 430px;}
+.bodyMain .dialogBox .orangeHeaderPCI {height:34px;line-height:36px;border-radius: 6px 6px 0 0;background: #0047ba;background: -moz-linear-gradient(top, #0047ba 70%, #0047ba 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(70%,#0047ba), color-stop(100%,#0047ba));background: -webkit-linear-gradient(top, #0047ba 70%,#0047ba 100%);background: -o-linear-gradient(top, #0047ba 70%,#0047ba 100%);background: -ms-linear-gradient(top, #0047ba 70%,#0047ba 100%);background: linear-gradient(top, #0047ba 70%,#0047ba 100%);-pie-background: linear-gradient(#0047ba 70%, #0047ba 100%)}
+.bodyMain .dialogBox .orangeHeaderPCI {color:#fff; text-align:center; padding-right:15px; font-size:18px;font-weight:700;}
+.bodyMain .pciInfoText {width: 330px;line-height: normal;}
+.bodyMain.ltr .pciInfoText {text-align:left;}
+.bodyMain .dialogBox a.close {background: url(Images/sprite01.png) no-repeat -59px -64px;width: 24px;height: 17px;top: 10px;right: 15px;position: absolute;cursor: pointer;z-index: 9999;}
+.bodyMain.ltr .dialogBox a.close {left:15px;}
+.bodyMain .paymentPCIError{margin-right:15px; clear:both; color:Red;font-weight:700; padding-top: 10px;float: right}
+.bodyMain .pciCC {direction: ltr;}
+.bodyMain .marketingTextBoxPayment  {line-height: 1.5;float:left; width: 250px;height: 480px;background:#fbfbfb;border:1px solid #e3e2e2;padding:10px;text-align:right;color:#213154;border-radius: 2px;}
+.bodyMain.ltr .marketingTextBoxPayment {float:right; text-align:left;}
+.bodyMain .marketingTextBoxPayment .title {font-weight:700; line-height: 2; }
+.bodyMain .marketingTextBoxPayment .content {height: 420px;}
+.bodyMain .marketingTextBoxPayment .last {font-weight:700;color:#0047ba;}
+
+/* PMN04
+----------------------------------------------------------------------------------------------- */
+
+.bodyMain .orderNum{font-weight:700; color:#213154;}
+.bodyMain .envelop{background: url(Images/sprite01.png) no-repeat -32px -64px;width: 24px;height: 17px;text-align: center;margin: 2px 5px 0 5px;}
+.bodyMain .sendDocsDialog {width: 344px;}
+.bodyMain .sendDocsDialog p{font-size: 14px;font-weight: 700;line-height: 18px;}
+.bodyMain .sendDocsDialog .body{padding: 20px;overflow: hidden;}
+.bodyMain .sendDocsDialog .innerBox {padding: 17px 13px;background: #f3f3f3;border: 1px solid #d3d2d3;border-radius: 5px;margin: 10px 0 15px;}
+.bodyMain .sendDocsDialog .emailField {width: 224px;height: 20px;border: 1px solid #b9c7c4;margin-right: 1px;line-height: normal;direction: ltr;}
+.bodyMain .sendDocsDialog .sendBtn {width: 65px;height: 22px;border: 1px solid #aeaeae;cursor: pointer;text-align: center;color: #fff;border-radius: 4px;font-weight: 700;background: #fe9945;background: -moz-linear-gradient(top, #fe9945 1%, #ffa050 45%, #ff7600 46%, #ff7600 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fe9945), color-stop(45%,#ffa050), color-stop(46%,#ff7600), color-stop(100%,#ff7600));background: -webkit-linear-gradient(top, #fe9945 1%,#ffa050 45%,#ff7600 46%,#ff7600 100%);background: -o-linear-gradient(top, #fe9945 1%,#ffa050 45%,#ff7600 46%,#ff7600 100%);background: -ms-linear-gradient(top, #fe9945 1%,#ffa050 45%,#ff7600 46%,#ff7600 100%);background: linear-gradient(top, #fe9945 1%,#ffa050 45%,#ff7600 46%,#ff7600 100%);-pie-background: linear-gradient(top, #fe9945 1%,#ffa050 45%,#ff7600 46%,#ff7600 100%);}
+.bodyMain .sendDocsDialog .validation {color: red;font-weight: 700;top: -8px;position: relative;right: 36px;}
+.bodyMain.ltr .sendDocsDialog .validation {left: 36px; text-align:left;}
+
+/* SMART WIZARD 2.0
+----------------------------------------------------------------------------------------------- */
+
+.bodyMain .swMain {position:relative;display:block; overflow:visible; width:1000px;}
+.bodyMain .swMain .stepContainer {display:block;position: relative;margin: 0;padding:0; border: 0px solid #C7C6C6;clear:both;min-height:300px;width: 1002px;}
+.bodyMain .swMain .stepContainer div.content {color:#213154;  text-align:right;z-index:88; clear:both;}
+.bodyMain .swMain .mainGreetings {padding:25px; width: auto;}
+.bodyMain .swMain .mainContentBox { padding:30px 38px;float:right;width: 924px;}
+
+
+.bodyMain .swMain .stepContainer .orangeHeader {margin-top:0px;}
+.bodyMain div.actionBar {position: relative; clear:both; margin: 3px 0 0 0; padding: 0; color: #5A5655; background-color:   #FFF;text-align:right;overflow:hidden;}
+.bodyMain.ltr div.actionBar {text-align:left !important;}
+
+.bodyMain .swMain .stepContainer .StepTitle {display:block;position: relative; margin:0;border:1px solid #C7C6C6;padding:5px;font: bold 16px Arial, Sans-Serif, "helvetica neue"; color:#5A5655; background-color:#E0E0E0;clear:both;text-align:right; z-index:88;-webkit-border-radius: 8px;-moz-border-radius  : 8px;}
+.bodyMain .swMain ul.anchor {position: relative;display:inline;list-style: none;padding: 0px; margin: 10px 0;clear: both;background: transparent; /*#EEEEEE */display: inline;font-size:16px;}
+.bodyMain .swMain ul.anchor li a{ position: relative; display:block;margin: 15px 0; padding: 3px 6px 3px 6px; border: 0px solid #E0E0E0; float: right;}
+.bodyMain.ltr .swMain ul.anchor li {float:left;}
+
+
+/* Anchor Element Style */
+/*.bodyMain .swMain ul.anchor li a {display:block;position:relative;margin:0;padding:3px;text-decoration: none;outline-style:none;z-index:99;}*/
+.bodyMain .swMain ul.anchor li a.selected{color:#008476;font-weight:700;}
+.bodyMain .swMain ul.anchor li a.done small { color:#009989;text-decoration:underline;}
+.bodyMain .swMain ul.anchor li a.disabled {color:#aaa;  cursor:text;  font-weight:normal;}
+.bodyMain .swMain ul.anchor li a .separator{width: 8px;height: 10px;float: right;margin-top: 3px; margin-right: 5px;}
+.bodyMain.ltr .swMain ul.anchor li a .separator {float:left; margin-left:5px;margin-right:0;}
+.bodyMain .swMain ul.anchor li a.selected .separator{background:url('images/sprite01.png') no-repeat -7px -0px;}
+.bodyMain.ltr .swMain ul.anchor li a.selected .separator{background:url('images/sprite01_eng.png') no-repeat -7px -0px;}
+.bodyMain .swMain ul.anchor li a.done .separator {background:url('images/sprite01.png') no-repeat -0px -11px;}
+.bodyMain.ltr .swMain ul.anchor li a.done .separator {background:url('images/sprite01_eng.png') no-repeat -0px -11px;}
+.bodyMain .swMain ul.anchor li a.disabled .separator {background:url('images/sprite01.png') no-repeat -0px -0px;}
+.bodyMain.ltr .swMain ul.anchor li a.disabled .separator {background:url('images/sprite01_eng.png') no-repeat -0px -0px;}
+
+.bodyMain .swMain .buttonNext { display:block; width:999px;}
+.bodyMain .swMain .buttonDisabled {color:#F8F8F8  !important;background-color: #CCCCCC !important; border: 1px solid #CCCCCC  !important;cursor:text; }
+.bodyMain .swMain .buttonFinish {display:none;float:right;margin:5px 10px 0 3px;padding:5px;text-decoration: none; text-align: center;font: bold 13px Arial, Sans-Serif, "helvetica neue";width:100px; color:#FFF; outline-style:none;background-color: #5A5655;border: 1px solid #5A5655; -moz-border-radius  : 5px; -webkit-border-radius: 5px;}
+
+/* Form Styles */
+
+.bodyMain .txtBox { border:1px solid #CCCCCC;color:#5A5655; font:13px Arial, Sans-Serif, "helvetica neue";padding:2px;width:430px;}
+.bodyMain .txtBox:focus { border:1px solid #0047ba;}
+
+
+.bodyMain .swMain .reqField {color:Red; font-size:15px;font-weight:700;}
+.bodyMain .swMain .reqFieldSmall {color:Red;font-size:12px;font-weight:normal;float:right;margin-right: 5%; top: -8px; position: relative;}
+.bodyMain.ltr .swMain .reqFieldSmall {float:left; margin-left:5%; margin-right:0;}
+.bodyMain .swMain .mrgTop50px {margin-top:50px;}
+.bodyMain .swMain .mrgTop20px {margin-top:20px;width: 100%;float: right;height: 20px;font-size: 16px;text-align: right;}
+.bodyMain.ltr .swMain .mrgTop20px {float:left; text-align:left;}
+.bodyMain .swMain .selectSmall {width:90px;float: right;}
+.bodyMain.ltr .swMain .selectSmall {float: left;}
+.bodyMain .swMain .selectMed { width:90px;float: right;margin-right:59px;}
+.bodyMain.ltr .swMain .selectMed { float: left;margin-left:59px; margin-right:0;}
+/*responsive*/
+/*home page*/
+.bodyMain .h1,.bodyMain  .h2,.bodyMain  .h3,.bodyMain  h1, h2,.bodyMain  h3 { margin-top: 0; margin-bottom: 0;} 
+.bodyMain ol,.bodyMain  ul { margin-top: 0; margin-bottom: 0;}
+.bodyMain .col-xs-12,.bodyMain .col-sm-12,.bodyMain .col-md-12,.bodyMain .col-lg-12 {padding-right: 0;padding-left: 0 ;}
+/*SignIn*/
+.bodyMain .h4,.bodyMain  .h5,.bodyMain  .h6,.bodyMain h4,.bodyMain h5,.bodyMain h6 {margin-top: 0; margin-bottom: 0;}
+.bodyMain .loginWrapper .row { float: none;}
+.bodyMain .marketingTextBox, .marketingTextBoxHotel {padding: 10px;}
+.bodyMain .wrapper{display: table;}
+.bodyMain .btnContinueInner {box-sizing: content-box !important;}
+.bodyMain * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing:  content-box;
+    box-sizing: content-box;
+ }
+.bodyMain .msgBox {box-sizing: border-box;}
+.bodyMain .ages { color: red;font-size: 12px; margin-top: 5px;}
+ /*form-wizard*/
+.bodyMain .mrgTop20px .label {color: #4F4F4F;}
+.personalInfoRow .label ,.mrgTop20px .label{font-size:100%}
+
+/*Escorts*/
+.bodyMain .accompaniedRow select {box-sizing: border-box;}
+/*Registration*/
+.bodyMain .label {font-size:100%;color:black;font-weight:100}
+/*Flights*/
+.bodyMain .flightRow { display: inline-block;width:100%}
+.bodyMain .flightRow span{float:right}
+.bodyMain.ltr .flightRow span{float:left; text-align:left;}
+.bodyMain .col-lg-1, .bodyMain .col-lg-10, .bodyMain .col-lg-11, .bodyMain .col-lg-12,
+.bodyMain .col-lg-2, .bodyMain .col-lg-3, .bodyMain .col-lg-4, .bodyMain .col-lg-5, 
+.bodyMain .col-lg-6, .bodyMain .col-lg-7, .bodyMain .col-lg-8,.bodyMain  .col-lg-9, 
+.bodyMain .col-md-1, .bodyMain .col-md-10, .bodyMain .col-md-11, .bodyMain .col-md-12, 
+.bodyMain .col-md-2,.bodyMain  .col-md-3,.bodyMain  .col-md-4,.bodyMain  .col-md-5, 
+.bodyMain .col-md-6, .bodyMain .col-md-7,.bodyMain  .col-md-8,.bodyMain  .col-md-9, 
+.bodyMain .col-sm-1, .bodyMain .col-sm-10,.bodyMain  .col-sm-11,.bodyMain  .col-sm-12, 
+.bodyMain .col-sm-2,.bodyMain  .col-sm-3,.bodyMain  .col-sm-4,.bodyMain  .col-sm-5, 
+.bodyMain .col-sm-6, .bodyMain .col-sm-7,.bodyMain  .col-sm-8,.bodyMain  .col-sm-9, 
+.bodyMain .col-xs-1,.bodyMain  .col-xs-10,.bodyMain  .col-xs-11,.bodyMain  .col-xs-12, 
+.bodyMain .col-xs-2,.bodyMain  .col-xs-3,.bodyMain  .col-xs-4,.bodyMain  .col-xs-5, 
+.bodyMain .col-xs-6,.bodyMain  .col-xs-7,.bodyMain  .col-xs-8, .bodyMain .col-xs-9{padding-right:0;padding-left:0}
+.bodyMain .linkSimple,.bodyMain .regulations{width:auto} 
+/* Personal Information*/
+.bodyMain .label { padding: 0;}
+.bodyMain label {margin-bottom: 0;}
+/*Transportation*/
+.bodyMain .label {text-align: justify;}
+.summaryBox{display:inline-block}
+/*Payments*/
+.bodyMain .paymentRow > * {float: none;width:auto}
+.bodyMain .paymentType > * {width: auto;padding-left: 0;padding-right: 0;float: none;}
+/*summary*/
+.summaryPage .col-sm-12,.summaryPage .col-sm-4 {float: none;}
+.bodyMain.ltr .summaryPage .col-sm-12, .bodyMain.ltr .summaryPage .col-sm-4 {text-align: left !important;}
+/*error page*/
+.bodyMain div#header {float: none;}
+
+@media screen and (max-width: 1024px){
+    /*landing page*/
+   .bodyLanding .landingPageWrapper {width: 100%;}
+   .bodyLanding .landingPageWrapper #subHeader {width:auto; height: auto; font-size: 27px; top:0; box-shadow: none; text-align: right; border: none; padding: 0; margin: 23px 16px 17px 29px; line-height: 1.3; }
+   .bodyLanding .linksWrapper {width: auto;}
+   .bodyLanding .linksWrapper .card .date {font-size: 19px; width: 28%;}
+
+   /*home page*/
+  .bodyMain .wrapper{display: flex;}
+  .bodyMain  h1.title {font-size: 20px !important; color: #0047ba;margin: 0 ; padding: 15px 15px 0 15px;}
+  .bodyMain  h3  {font-size: 15px;margin: 0 !important;padding-right: 15px ;padding-left: 15px ;padding: 5px 15px 15px 15px ;}
+  .bodyMain  .innerContent { margin: 0;}
+  .bodyMain .col-xs-12,.bodyMain .col-sm-12{min-height: initial;} 
+  .bodyMain  .Container {padding-right: 5px;padding-left: 5px;width:100% ;overflow: hidden; } /*box-sizing: border-box !important;???*/
+  .bodyMain .footerWrapper { margin-top: 30px; height: auto;}
+  .bodyMain .copyrights{  display: inline-block; width: 100%;}
+  .bodyMain .footerWrapper .linksList ul {padding-right: 15px;padding-left: 15px;}
+  .bodyMain .col-sm-12 {width: 100% !important}
+  .bodyMain .col-sm-11 {width: 91.66666667% !important}
+  .bodyMain .col-sm-10 {width: 83.33333333% !important}
+  .bodyMain .col-sm-9{width: 75% !important}
+  .bodyMain .col-sm-8{ width: 66.66666667% !important}
+  .bodyMain .col-sm-7{width: 58.33333333% !important}
+  .bodyMain .col-sm-6{ width: 50% !important}
+  .bodyMain .col-sm-5{width: 41.66666667% !important}
+  .bodyMain .col-sm-4{ width: 33.33333333% !important}
+  .bodyMain .col-sm-3{width: 25% !important}
+  .bodyMain .col-sm-2 {width: 16.66666667% !important}
+  .bodyMain .col-sm-1{width: 8.33333333% !important}
+   /*Registration page*/
+   .bodyMain .mainContentBox {padding: 0;}
+   .bodyMain .loginWrapper {margin: 0 !important;}
+   .bodyMain .mainContentBox{padding:15px;}
+   .bodyMain .marketingTextBox, .bodyMain .marketingTextBoxHotel { height: auto; text-align: center !important;}
+   .bodyMain .row { margin-right: 0; margin-left: 0;}
+   .bodyMain .loginWrapper .row { margin-right: 0;margin-left:0 !important;}
+   .loginWrapper h4 {margin-bottom: 0;margin-top: 0;}
+   .bodyMain .col-xs-12,.bodyMain .col-sm-12,.bodyMain .col-md-12,.bodyMain .col-lg-12 {padding-right: 0 !important;padding-left: 0 !important;}
+   .bodyMain .msgBox.hiddenClass {min-width: 100%;}
+   .bodyMain .loginValidation {margin-right: 0; margin-left:0 !important;}
+   .bodyMain .btnContinueInner {padding: 3px 6px 5px 10px;border-radius: inherit;}
+   /*EventCyclesRGS02*/
+   .bodyMain .lapName {margin-right: 36px;}
+   .bodyMain .lapRbt {font-size:15px;}
+   .bodyMain.ltr .lapName {margin-left: 36px; font-size: 15px;}
+   .bodyMain .mWrapperDiv { margin-left: 15px !important; margin-right:15px !important;}
+   .bodyMain .roommatesRow, .roommatesRowC {height: auto;}
+   .bodyMain .roommatesBox {padding-bottom: 10px;}
+   /*.bodyMain.ltr .roommatesRowC, .bodyMain.ltr .roommatesRow {float:none; text-align:left;}*/
+   /*.bodyMain .roommateClear {bottom: 0;position: absolute;margin-bottom: 10px;}*/
+   .bodyMain .roommatesBox .lbl {margin-top:15px}
+   .bodyMain .roommatesRow, .roommatesRowC {margin: 0}
+   .bodyMain * {
+    -webkit-box-sizing:border-box !important;
+    -moz-box-sizing:  border-box !important;
+    box-sizing: border-box !important;
+    }
+    /*accompanies*/
+   .bodyMain.ltr .accompaniedRow a {margin-right: 5px;}   
+     /*hotelPage*/
+    .bodyMain  .hotelsInfoRowH180 {height: 100% !important;}
+    .bodyMain  .hotelsHalfRow {height: 100% !important;}
+    .bodyMain .hotelsInfoLabel{margin-left:0px !important}
+    .bodyMain .hotelDesc {padding: 5px 7px !important;}
+    .bodyMain #hotelsContent .col-xs-4 {float:right}
+    .bodyMain.ltr #hotelsContent .col-xs-4 {float:left; text-align:left;}
+    .bodyMain #hotelsContent .col-xs-12{margin-bottom:10px}
+    .bodyMain .col-xs-12 .greyPanel.roomNum{width:100%; padding: 0 10px;}
+    .hotelCommentsTitle.greyPanel.col-xs-12 {padding: 0 10px !important;margin:0}
+    /*form-wizard*/
+   .bodyMain .swMain ul.anchor li {margin: 5px 0;}
+   .bodyMain .infoBox { margin-left: 10px; margin-right: 10px;}
+   .bodyMain .swMain .reqFieldSmall {margin-right: 0%;top:-16px;font-size: 11px;}
+   .bodyMain.ltr .swMain .reqFieldSmall {margin-left:0;}
+   .bodyMain .swMain .reqField{margin: 0 2px 0 2px;}
+   .bodyMain .lblname{ margin: 0 !important;margin-right: 15px !important; text-align: right !important;}
+   .bodyMain.ltr .lblname{ margin-left: 15px !important; text-align: left !important;}
+   .bodyMain .swMain .mainContentBox {padding: 22px 5px !important;}
+   .bodyMain .msgBox {min-width: 100%;}
+   .bodyMain .ribbonBox {padding: 10px ;}
+   /*Flights*/
+   .bodyMain .flightRow span {padding-left: 0;padding-right: 0;}
+   .bodyMain .ribbonBox{border:0;}
+   .bodyMain .ribbon{width:100%}
+   .bodyMain .ribbonCorner{display:none !important}
+   .bodyMain.ltr .regulations {text-align:left; margin-left:0;}
+   /*lodging*/
+   .bodyMain .hotelsInfoLabel {margin: 0 !important;}
+   .bodyMain .selectHotels { margin: 0px 0 0px 20px; }
+   .bodyMain.ltr .selectHotels { margin: 0 20px 0 0; }
+   .bodyMain .marginBottom25 .roomComp ,.bodyMain .marginBottom25 .roomType,.bodyMain .marginBottom25 .roomInfants {font-size:14px}
+   /*Flights*/
+   .bodyMain .clearFlight {margin: 08px 12px 12px 12px;}
+   /*Transportation*/
+   .bodyMain .shuttleRepeat .marginBottom25{display:inline-block;margin-bottom: 10px;font-size:14px}
+   .bodyMain label.colShowName,.bodyMain .lblShowPrice  {text-align: right;font-weight: 700;font-size:100%}
+   .bodyMain.ltr label.colShowName,.bodyMain.ltr .lblShowPrice {text-align:left;}
+   .bodyMain .lblShowPrice.full{color:black}
+   .bodyMain .greyPanel {padding: 0 10px;}
+   .bodyMain label#noShuttle {font-weight: 100;line-height: inherit;}
+   .bodyMain .paddinfRow{padding-right:10px!important}
+   .bodyMain.ltr .paddinfRow{padding-left:10px!important; padding-right:0 !important;}
+   .bodyMain .shuttleRepeat  .greyPanel {margin-bottom: 10px;}
+   .bodyMain .shuttleRepeat .paddinfRow {height:30px}
+   /*Shows*/
+   .bodyMain .responsive{float: none;display: inline-block;}
+   .bodyMain .responsive label{height:30px}
+   .bodyMain .responsive select,.bodyMain .responsive label{padding-right:10px}
+   .bodyMain.ltr .responsive select,.bodyMain .responsive label{padding-left:10px; padding-right:0;}
+   .bodyMain .label{padding:0}
+   .bodyMain .responsive .marginBottom25{margin-bottom:10px; margin-top:0px;display: inline-block;font-size:14px}
+   .bodyMain .responsive .colShowName {margin-top: 10px;line-height: 20px;}
+   .bodyMain a.clearForm, .bodyMain   a.clearForm:visited, .bodyMain  a.clearForm:hover{margin:8px 0}
+   .bodyMain.ltr a.clearForm, .bodyMain.ltr   a.clearForm:visited, .bodyMain.ltr  a.clearForm:hover{float:left; text-align:left;}
+   .bodyMain.ltr .hotelsInfoRow a.clearForm, .bodyMain.ltr .hotelsInfoRow a.clearForm:visited, .bodyMain.ltr .hotelsInfoRow a.clearForm:hover {float: right;}
+   /*.responsive .selShowTickets{margin-bottom: 5px;}*/
+   /*accompanies*/
+   .bodyMain .accompaniedRow input{margin:0 !important;}
+   .bodyMain .accompaniedRow div {float: right;}
+   .bodyMain.ltr .accompaniedRow div {float:right;}
+   .bodyMain .accompanyDob select{margin: 1px 1.3% 0 0px !important;width:32%}
+   .bodyMain.ltr .accompanyDob select {width: 70px;}
+   /*Payments*/
+   .bodyMain .marketingTextBoxPayment {width: 100%;height: auto;}
+   .bodyMain .marketingTextBoxPayment .content {height: auto;} 
+   /*Registration*/
+   .bodyMain .marketingTextBox  {height:auto !important}
+    /*pci*/
+   .bodyMain div#pciDialog {right: 0;}
+   /*sing in*/
+    .bodyMain .mainContentBox.pieFix.sign{display: inline-block;}
+
+}
+/*end max-width 1024*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /*landing page*/
+    .bodyLanding #header {height:134px; background: url(Images/logo-home-m.jpg) no-repeat; background-size: contain; background-position: center;}
+    .bodyLanding .landingPageWrapper #subHeader {font-size: 30px;}
+    .bodyLanding .linksWrapper .card {width: 357px; margin: 0 16px 25px 0;}
+    /*home page*/
+    .bodyMain  h1.title {font-size: 25px !important;}
+    .bodyMain  h3  {font-size: 20px !important;}
+    /*cycles*/
+    .bodyMain.ltr .displayI .lbl {margin-left: 0; width: 185px;}
+    /*Personal Information*/
+   .bodyMain .personalInfoRow input {margin-left: 0px;}
+   .bodyMain.ltr .personalInfoRow input {width: 185px;}
+   .bodyMain.ltr .personalInfoRow .input10 {width: 60px; margin-right: 5px;}
+   .bodyMain.ltr .personalInfoRow .input30 {width: 120px; margin-right: 0;}
+   .bodyMain .personalInfoRow label {margin-right: 0;}
+   .bodyMain.ltr .personalInfoRow label {margin-left:0; }
+   .bodyMain.ltr .personalInfoRow .selectMed  { margin-left: 20px; width: 80px;}
+   .bodyMain.ltr .personalInfoRow .selectSmall {width:80px;}
+   .bodyMain.ltr .personalInfoRow .dateSelect  {width: 60px; margin-left: 0; margin-right: 5px;}
+   .bodyMain.ltr .personalInfoRow select#district {width: 185px;}
+    /*accompanies*/
+    .bodyMain.ltr .accompaniedRow div {float: left;}
+    .bodyMain.ltr .accompanyDob select {width: 100px;}
+   /*summary*/
+   .bodyMain .summaryCell {margin: 0;}
+   .bodyMain.ltr .summaryCell {text-align:left;}
+   .bodyMain .lblPrice { margin: 0;}
+   .bodyMain .summaryCell, .bodyMain .lblPrice{float:right;padding-left: 10px;padding-right: 10px}
+   .bodyMain .greyPanel {font-size: 15px;height:auto;min-height:30px}
+   .summaryBox .greyPanel {padding: 0;}
+   .bodyMain .marginLeft10 {margin-left: 0;}
+   .summaryPage .col-sm-12, .summaryPage .col-sm-4 {float: right;}
+   .summaryPage .TotalPrice.pie {display: inline-block;width: 100%;}
+   .bodyMain span.lbl.lblM {margin-right: 15px !important; }
+   .roommatesRow.rr2.col-sm-12 {margin-bottom: 10px;}
+   .bodyMain .marginRight10 {margin-right: 0;}
+    /*image*/
+   .bodyMain .headerBanner {background: url(Images/logo-m.jpg) no-repeat; background-size:contain; background-position:center}
+}
+
+@media screen and (max-width: 767px) {
+    /*landing page*/
+   .bodyLanding #header {height: 134px; background: url(Images/logo-home-sm.jpg) no-repeat; background-size: contain; background-position: center;}
+   .bodyLanding .landingPageWrapper .info {font-size: 16px; margin: 17px 17px 35px; line-height: 1.63;}
+   .bodyLanding .linksWrapper .card {width: 90%; margin: 10px 17px 10px 18px;}
+
+   .bodyMain .col-xs-12 {width: 100% !important}
+   .bodyMain .col-xs-11 {width: 91.66666667% !important}
+   .bodyMain .col-xs-10{width: 83.33333333% !important}
+   .bodyMain .col-xs-9 {width: 75% !important}
+   .bodyMain .col-xs-8 { width: 66.66666667% !important}
+   .bodyMain .col-xs-7 {width: 58.33333333% !important}
+   .bodyMain .col-xs-6 { width: 50% !important}
+   .bodyMain .col-xs-5 {width: 41.66666667% !important}
+   .bodyMain .col-xs-4 { width: 33.33333333% !important}
+   .bodyMain .col-xs-3 {width: 25% !important}
+   .bodyMain .col-xs-2 {width: 16.66666667% !important}
+   .bodyMain .col-xs-1{width: 8.33333333% !important}
+   /*Cycles list*/
+   .bodyMain .roommatesBox input {width: 50%;}
+   .bodyMain .roommatesBox .lbl { margin-right: 0 !important; margin-left:0 !important;}
+   .bodyMain .roommatesRow .roommateArea_code {width: 15%;}
+   .bodyMain .roommatesRow .roommatePhone {width: 35%;margin-left: 10px;}
+   .bodyMain.ltr .roommatesRow .roommatePhone {margin-right: 10px; margin-left:0}
+   .bodyMain.ltr .roommatesBox input[id$='Name'], .bodyMain.ltr .roommatesBox input[id$='Id'] {margin-top: 5px;}
+   .bodyMain.ltr .roommatesBox .phoneWrapper {display: inline-block; margin-top: 5px;}
+    /*Personal Information*/
+   .bodyMain .personalInfoRow label {width: 85px;margin-right: 0px;text-align:right;}
+   .bodyMain .swMain .selectSmall {width: 90px;}
+   .bodyMain.ltr .swMain .selectSmall {width: 70px;}
+   .bodyMain .personalInfoRow .input30 {width: 140px;margin-left: 10px;}
+   .bodyMain.ltr .personalInfoRow .input30 {width: 105px;}
+   .bodyMain .personalInfoRow .dateSelect {width: 60px;margin-left: 10px;}
+   .bodyMain .personalInfoRow input { width: 150px;margin-left: 0;}
+   .bodyMain .personalInfoRow .label,.bodyMain .mrgTop20px .label{font-size:85%}
+   .bodyMain.ltr .personalInfoRow .label {text-align:left; margin-left:0 !important;}
+   .bodyMain .lblname{width:100% !important}
+   .bodyMain .lblselect{width:75% !important}
+   .bodyMain .feesRow { margin-bottom: 40px;}
+   .bodyMain .swMain .selectMed {margin-right: 5px;}
+   .bodyMain.ltr .swMain .selectMed {margin-left: 5px; width: 70px;}
+   .bodyMain.ltr .personalInfoRow .input30, .bodyMain.ltr .personalInfoRow input {margin-right:0;}
+   .bodyMain.ltr .personalInfoRow label {width:145px;}
+   .bodyMain.ltr .personalInfoRow .dateSelect {margin-right: 5.5px;}
+   
+   /*menu*/
+   .bodyMain .swMain ul.anchor li a {margin:0;}
+   /*form-wizard - Personal Information*/
+   .bodyMain .personalInfoRow .input10 {width:55px;}
+   .bodyMain.ltr .personalInfoRow .input10 {margin-right:0; width: 40px;}
+   .bodyMain.ltr .personalInfoRow select#district {width:150px;}
+   /*Registration*/
+   .bodyMain .totalPriceMark {width:80px;}
+   .bodyMain .feesRow .lblname{margin-bottom:15px !important} 
+   .bodyMain .lblPrice{    margin: 0;}
+    /*accompanies*/
+   .bodyMain.ltr .accompaniedRow label.col-xs-3 {width: 117px !important;}
+   .bodyMain.ltr .accompaniedRow input[type='text'] {width: 210px !important; float: right !important;}
+   .bodyMain.ltr .accompaniedRow select {width: 90px; margin: 0px 4px 0 23px; float: right;}
+   .bodyMain.ltr .accompanyDob select {float: right !important; width: 67px; padding-left: 0;}
+   /*hotel*/
+   .bodyMain.ltr #hotelsContent .roomComp, .bodyMain.ltr #hotelsContent .roomType {width: 145px !important;}
+   .bodyMain.ltr #hotelsContent .roomCompSel , .bodyMain.ltr #hotelsContent .roomTypeSel {width: 50% !important;}
+    /*Flights*/
+   .bodyMain .flightRow {line-height: 30px;}
+   .bodyMain .regulations{ margin-right:0;margin-top: 15px;}
+   .bodyMain .lblFlightPrice {margin-left:0px;}
+   .bodyMain .flightSeparator {margin-top: 10px;}
+   /*products*/
+   .bodyMain.ltr .cellChildAge {margin-left: 85px;}
+   .bodyMain.ltr .selectPassAge {width: 80px;}
+   /*Payments*/
+   .bodyMain .TotalPrice {font-size: 16px;padding-right: 5px;}
+   .bodyMain.ltr .TotalPrice {padding-right:0px !important;}
+   .bodyMain .errorlink,.bodyMain .errorTextMarketing,.bodyMain .errorTitle{margin-right: 0;}
+   .bodyMain #ccPaymentInfoBox .infoBox {margin-left: 0; margin-right: 0;}
+   .bodyMain .btnContinueText {padding: 0px 10px 0px 10px;font-size: 90%;}
+   .bodyMain .paymentRow label {min-width: auto;float: right;}
+   .bodyMain.ltr .paymentRow label {float: left;}
+   .bodyMain .paymentRow {line-height: inherit;margin-bottom: 20px;}
+   .bodyMain .paymentType input,.bodyMain .paymentType .defaultBoldLabel {float: right;}
+   .bodyMain.ltr .paymentType input,.bodyMain.ltr .paymentType .defaultBoldLabel {float: left;}
+   .bodyMain div#tokensList {margin-right: 0 !important;}
+   .bodyMain .ltrTokenText{width:auto !important;float: right;margin-left: 5px;}
+   .bodyMain label.ltrPmtToken.defaultBoldLabel { display: inline-block !important;margin-right:0 !important}
+   .bodyMain .txtTokenVal {margin-left: 0 !important;float: right !important;}
+      /*summary*/
+   .bodyMain .summaryBox .col-xs-4, .summaryBox .col-xs-8, .summaryBox .col-xs-6{float:right;}
+   .bodyMain.ltr .summaryBox .col-xs-4, .summaryBox .col-xs-8, .summaryBox .col-xs-6{float:left;}
+   .bodyMain .summaryCell, .bodyMain .smallSummaryCell,.bodyMain .lblPrice {margin: 0;}
+    .bodyMain .guests {
+        height: 100%;
+        display: table;
+        width: 100%;
+    }
+   .bodyMain .flightSeparator {display:inline-block; width:100%}   
+   .bodyMain .ribbonBox{margin-bottom: 0; padding:10px 10px !important}
+   .bodyMain .summaryBox .ribbon{width:100%}
+   .bodyMain .greyPanel{height:auto;line-height: 25px;font-size:14px}
+   .bodyMain .greyPanel span{margin: 0 5px}
+   .bodyMain .summaryBox {width: 100%;}
+   .bodyMain .TotalPrice {display: inline-block;width: 100%;margin-top: 20px;}
+   .bodyMain .summaryRow{line-height:30px}
+   .bodyMain .summaryBox .ribbon span {font-size:14px}
+   .bodyMain.ltr .bigSummaryCell {width: 100% !important;}
+   /*Registration of guests in rooms*/
+   .bodyMain .roomPrice{margin-top:0 !important}
+   .bodyMain .roomPrice label {margin-bottom: 15px;}
+   /*send Docs Dialog*/
+   .bodyMain .sendDocsDialog {left: 0px;right: 0px;margin: 5%;width:90%}
+   .bodyMain .sendDocsDialog .emailField{width:85%}
+   .bodyMain .linkCatalog a{font-size:14px}
+  /*pci*/
+   .bodyMain #titleCcText {font-size: 15px;}
+   .bodyMain.ltr #titleCcText {font-size: 11px;}
+   .bodyMain div#pciDialog {top: 0 !important; overflow:auto;height:85%}
+   #loginDialogForm{height:100%;overflow:auto}
+   /*home page*/
+   .bodyMain .footerWrapper h3 { padding-right: 5px; padding-left: 5px;font-size: 17px;}
+   /*image*/
+   .bodyMain .headerBanner {background: url(Images/logo-sm.jpg) no-repeat; background-size:contain; background-position:center}
+    /*meal*/
+   .bodyMain #mealsPart1 .marginBottom25 {display: inline-block;margin-bottom: 10px;font-size: 14px;margin-top:0;}
+   .bodyMain #mealsPart1 .greyPanel {margin-bottom: 10px}
+   .bodyMain .cellProductsTickets,.bodyMain  .lblShowPrice,.bodyMain .colShowName {height:30px}
+   .bodyMain #noLunch{font-weight: 100;line-height: unset;}
+   .bodyMain.ltr .selShowTickets {margin-right:25%; margin-left:0;}
+}
+@media screen and (max-width:430px) {
+    /*pci*/
+    #pciIframe{height:325px;}
+    .bodyMain .pciInfoText {width: 75%;}
+}
+@media screen and (max-width:320px) {
+    /*Registration*/
+    .bodyMain.ltr .personalInfoRow .label2 {width: 100% !important; margin-bottom: 10px;}
+    .bodyMain.ltr .personalInfoRow .dateSelect {float: right;}
+    /*accompanies*/
+    .bodyMain.ltr .accompaniedRow select {width: 72px !important; padding-left: 0; margin: 0 5px 0 0;}
+    .bodyMain.ltr .accompaniedRow input[type='text'], .bodyMain.ltr .accompaniedRow .col-xs-8 {width: 175px !important;}
+    .bodyMain.ltr .accompaniedRow .accompanyDob {width: 100% !important;}
+    /*fees*/
+    .bodyMain.ltr .totalPriceMark {width: 70px;}
+    /*products*/
+    .bodyMain.ltr .selectName {width: 190px;}
+    /*payment*/
+    .bodyMain #titleCcText {font-size: 12px;}
+    
+}
+    /*accessibility*/
+    [type="text"]:focus, [tabindex="0"]:focus, a:focus, select:focus, [type="button"]:focus {
+        outline: 2px solid #9EBFF6 !important;
+        border: 1px solid #9EBFF6 !important;
+    }

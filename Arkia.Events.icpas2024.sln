@@ -6,7 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "General Projects", "General
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specific Projects", "Specific Projects", "{F98C20A0-47FC-4ABA-9108-813C47BE01C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkia.Events.UI", "Arkia.Events.UI\Arkia.Events.UI.csproj", "{17526979-E6CD-420C-BBB8-5EC385C56D53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkia.Events.UI.icpas2024", "Arkia.Events.UI\Arkia.Events.UI.icpas2024.csproj", "{17526979-E6CD-420C-BBB8-5EC385C56D53}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkia.Events.BusinessControllers", "..\..\arkia-events-core\Arkia.Events.BusinessControllers\Arkia.Events.BusinessControllers.csproj", "{28692A45-88A9-4523-9351-E547222B40E0}"
 EndProject
@@ -25,8 +25,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkia.Events.SqlDataAccess", "..\..\arkia-events-core\Arkia.Events.SqlDataAccess\Arkia.Events.SqlDataAccess.csproj", "{015A60C1-DED9-4DDB-9270-28706A2CA76D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arkia.Events.UserDefinedTypes", "..\..\arkia-events-core\Arkia.Events.UserDataTypes\Arkia.Events.UserDefinedTypes.csproj", "{CF1F9302-5EAD-46B1-9A30-284C1825C7B0}"
-
-
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -196,6 +195,36 @@ Global
 		{6953756C-743A-45D9-99FF-AB58DB31581F}.test-44|x64.Build.0 = Release|x64
 		{6953756C-743A-45D9-99FF-AB58DB31581F}.test-44|x86.ActiveCfg = Release|x86
 		{6953756C-743A-45D9-99FF-AB58DB31581F}.test-44|x86.Build.0 = Release|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|x64.ActiveCfg = Debug|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|x64.Build.0 = Debug|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|x86.ActiveCfg = Debug|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|x86.Build.0 = Debug|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|x64.ActiveCfg = Release|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|x64.Build.0 = Release|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|x86.ActiveCfg = Release|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|x86.Build.0 = Release|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|Any CPU.ActiveCfg = Release|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|Any CPU.Build.0 = Release|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|x64.ActiveCfg = Release|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|x64.Build.0 = Release|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|x86.ActiveCfg = Release|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|x86.Build.0 = Release|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|Any CPU.ActiveCfg = Release|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|Any CPU.Build.0 = Release|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|x64.ActiveCfg = Release|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|x64.Build.0 = Release|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|x86.ActiveCfg = Release|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|x86.Build.0 = Release|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|Any CPU.ActiveCfg = Release|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|Any CPU.Build.0 = Release|Any CPU
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|x64.ActiveCfg = Release|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|x64.Build.0 = Release|x64
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|x86.ActiveCfg = Release|x86
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|x86.Build.0 = Release|x86
 		{A43013BE-E9C4-4653-AC41-D6285633F778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A43013BE-E9C4-4653-AC41-D6285633F778}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A43013BE-E9C4-4653-AC41-D6285633F778}.Debug|x64.ActiveCfg = Debug|x64
@@ -316,36 +345,6 @@ Global
 		{CF1F9302-5EAD-46B1-9A30-284C1825C7B0}.test-44|x64.Build.0 = Release|x64
 		{CF1F9302-5EAD-46B1-9A30-284C1825C7B0}.test-44|x86.ActiveCfg = Release|x86
 		{CF1F9302-5EAD-46B1-9A30-284C1825C7B0}.test-44|x86.Build.0 = Release|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|x64.ActiveCfg = Debug|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|x64.Build.0 = Debug|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|x86.ActiveCfg = Debug|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Debug|x86.Build.0 = Debug|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|x64.ActiveCfg = Release|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|x64.Build.0 = Release|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|x86.ActiveCfg = Release|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.Release|x86.Build.0 = Release|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|Any CPU.ActiveCfg = Release|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|Any CPU.Build.0 = Release|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|x64.ActiveCfg = Release|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|x64.Build.0 = Release|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|x86.ActiveCfg = Release|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-42-default|x86.Build.0 = Release|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|Any CPU.ActiveCfg = Release|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|Any CPU.Build.0 = Release|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|x64.ActiveCfg = Release|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|x64.Build.0 = Release|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|x86.ActiveCfg = Release|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-43|x86.Build.0 = Release|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|Any CPU.ActiveCfg = Release|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|Any CPU.Build.0 = Release|Any CPU
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|x64.ActiveCfg = Release|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|x64.Build.0 = Release|x64
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|x86.ActiveCfg = Release|x86
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB}.test-44|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -356,59 +355,13 @@ Global
 		{C34DE2C0-956A-4A56-BC69-A1D77CEBA765} = {6BA2AD08-DB9F-4997-B778-E8028A294B84}
 		{5C1327D9-2323-4B31-814E-D63ED62E55A6} = {6BA2AD08-DB9F-4997-B778-E8028A294B84}
 		{6953756C-743A-45D9-99FF-AB58DB31581F} = {6BA2AD08-DB9F-4997-B778-E8028A294B84}
+		{85CA1143-6970-4C65-B7A9-26DA79BD83CB} = {6BA2AD08-DB9F-4997-B778-E8028A294B84}
 		{A43013BE-E9C4-4653-AC41-D6285633F778} = {6BA2AD08-DB9F-4997-B778-E8028A294B84}
 		{7786BF5D-E614-4132-B3C5-009064E59112} = {6BA2AD08-DB9F-4997-B778-E8028A294B84}
 		{015A60C1-DED9-4DDB-9270-28706A2CA76D} = {6BA2AD08-DB9F-4997-B778-E8028A294B84}
 		{CF1F9302-5EAD-46B1-9A30-284C1825C7B0} = {6BA2AD08-DB9F-4997-B778-E8028A294B84}
-		{85CA1143-6970-4C65-B7A9-26DA79BD83CB} = {6BA2AD08-DB9F-4997-B778-E8028A294B84}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {569823DA-07B0-48F9-A572-C32C0B97E438}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 11
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = http://172.30.5.13:8080/tfs/pnmsoft
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.BusinessControllers\\Arkia.Events.BusinessControllers.csproj
-		SccProjectTopLevelParentUniqueName1 = Arkia.Events.icpas2023.sln
-		SccProjectName1 = ../../Arkia.Events.icpasEmirates2022/Arkia.Events.BusinessControllers
-		SccLocalPath1 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.BusinessControllers
-		SccProjectUniqueName2 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.BusinessEntities\\Arkia.Events.BusinessEntities.csproj
-		SccProjectTopLevelParentUniqueName2 = Arkia.Events.icpas2023.sln
-		SccProjectName2 = ../../Arkia.Events.icpasEmirates2022/Arkia.Events.BusinessEntities
-		SccLocalPath2 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.BusinessEntities
-		SccProjectUniqueName3 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.Common.Extensions\\Arkia.Events.Common.Extensions.csproj
-		SccProjectTopLevelParentUniqueName3 = Arkia.Events.icpas2023.sln
-		SccProjectName3 = ../../Arkia.Events.icpasEmirates2022/Arkia.Events.Common.Extensions
-		SccLocalPath3 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.Common.Extensions
-		SccProjectUniqueName4 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.Controllers\\Arkia.Events.Controllers.csproj
-		SccProjectTopLevelParentUniqueName4 = Arkia.Events.icpas2023.sln
-		SccProjectName4 = ../../Arkia.Events.icpasEmirates2022/Arkia.Events.Controllers
-		SccLocalPath4 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.Controllers
-		SccProjectUniqueName5 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.Infrastructure.Core\\Arkia.Events.Infrastructure.Core.csproj
-		SccProjectTopLevelParentUniqueName5 = Arkia.Events.icpas2023.sln
-		SccProjectName5 = ../../Arkia.Events.icpasEmirates2022/Arkia.Events.Infrastructure.Core
-		SccLocalPath5 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.Infrastructure.Core
-		SccProjectUniqueName6 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.OracleDataAccess\\Arkia.Events.OracleDataAccess.csproj
-		SccProjectTopLevelParentUniqueName6 = Arkia.Events.icpas2023.sln
-		SccProjectName6 = ../../Arkia.Events.icpasEmirates2022/Arkia.Events.OracleDataAccess
-		SccLocalPath6 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.OracleDataAccess
-		SccProjectUniqueName7 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.SqlDataAccess\\Arkia.Events.SqlDataAccess.csproj
-		SccProjectTopLevelParentUniqueName7 = Arkia.Events.icpas2023.sln
-		SccProjectName7 = ../../Arkia.Events.icpasEmirates2022/Arkia.Events.SqlDataAccess
-		SccLocalPath7 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.SqlDataAccess
-		SccProjectUniqueName8 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.UserDataTypes\\Arkia.Events.UserDefinedTypes.csproj
-		SccProjectTopLevelParentUniqueName8 = Arkia.Events.icpas2023.sln
-		SccProjectName8 = ../../Arkia.Events.icpasEmirates2022/Arkia.Events.UserDataTypes
-		SccLocalPath8 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.UserDataTypes
-		SccProjectUniqueName9 = Arkia.Events.UI\\Arkia.Events.UI.csproj
-		SccProjectTopLevelParentUniqueName9 = Arkia.Events.icpas2023.sln
-		SccProjectName9 = Arkia.Events.UI
-		SccLocalPath9 = Arkia.Events.UI
-		SccProjectUniqueName10 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.Entities\\Arkia.Events.Entities.csproj
-		SccProjectTopLevelParentUniqueName10 = Arkia.Events.icpas2023.sln
-		SccProjectName10 = ../../Arkia.Events.icpasEmirates2022/Arkia.Events.Entities
-		SccLocalPath10 = ..\\..\\Arkia.Events.icpasEmirates2022\\Arkia.Events.Entities
 	EndGlobalSection
 EndGlobal
